@@ -1,0 +1,8 @@
+{
+  "name": "futxtrm-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

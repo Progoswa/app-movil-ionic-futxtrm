@@ -1,0 +1,268 @@
+<ion-toolbar>
+	<ion-menu-button slot="start"></ion-menu-button>
+	<ion-title>{{'user.calendar.title' | translate}}</ion-title>
+</ion-toolbar>
+<ion-content>
+	<ion-grid *ngIf="view===1">
+		<ion-row>
+			<ion-col size="6"></ion-col>
+			<ion-col size="4">
+				<h5 class="text-dorado title">{{monthFormat(currentMonth)}} {{yearFormat(currentDay)}}</h5>
+			</ion-col>
+			<ion-col size="2">
+				<br />
+				<ion-button (click)="add()" tabindex="-1" class="margin-button-5 futxtrm-color-dorado" style="width: 30px">
+					<mat-icon aria-label="Example icon-button icon"><ion-icon name="add-outline"></ion-icon></mat-icon>
+				</ion-button>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>D</ion-col>
+			<ion-col>L</ion-col>
+			<ion-col>MA</ion-col>
+			<ion-col>MI</ion-col>
+			<ion-col>J</ion-col>
+			<ion-col>V</ion-col>
+			<ion-col>S</ion-col>
+		</ion-row>
+		<ion-row *ngFor="let days of calendar">
+			<ion-col *ngFor="let day of days" [ngClass]="{'futxtrm-color-dorado':day.alert || day.today}">
+				<h6>
+					{{day.n!==undefine?day.n:''}}
+					<ion-icon *ngIf="day.alert" name="reader"></ion-icon>
+				</h6>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col size="12">
+				<div class="col-md-6 col-sm-12" style="text-align: right">
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="edit_calendar(-1)" style="margin-right: 5px">
+						<
+					</ion-button>
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="edit_calendar(0)">{{'today' | translate}}</ion-button>
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="edit_calendar(1)" style="margin-left: 5px">></ion-button>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-grid *ngIf="view===2">
+		<ion-row>
+			<ion-col size="6">
+				<ion-button (click)="add()" tabindex="-1" class="margin-button-5 futxtrm-color-dorado" style="width: 30px">
+					<mat-icon aria-label="Example icon-button icon"><ion-icon name="add-outline"></ion-icon></mat-icon>
+				</ion-button>
+
+				<h1 class="text-dorado title">{{monthFormat(currentMonth)}} {{yearFormat(currentDay)}}</h1>
+			</ion-col>
+			<ion-col size="6">
+				<div class="col-md-6 col-sm-12" style="text-align: right">
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="changeWeek(-1)" style="margin-right: 5px"><</ion-button>
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="changeWeek(0)">{{'today' | translate}}</ion-button>
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="changeWeek(1)" style="margin-left: 5px">></ion-button>
+				</div>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col></ion-col>
+			<ion-col>{{'days_short.sun' | translate}} {{getDay(0)}}</ion-col>
+			<ion-col>{{'days_short.mon' | translate}} {{getDay(1)}}</ion-col>
+			<ion-col>{{'days_short.tue' | translate}} {{getDay(2)}}</ion-col>
+			<ion-col>{{'days_short.wed' | translate}} {{getDay(3)}}</ion-col>
+			<ion-col>{{'days_short.thu' | translate}} {{getDay(4)}}</ion-col>
+			<ion-col>{{'days_short.fri' | translate}} {{getDay(5)}}</ion-col>
+			<ion-col>{{'days_short.sat' | translate}} {{getDay(6)}}</ion-col>
+		</ion-row>
+		<ion-row *ngFor="let hour of day">
+			<ion-col>{{hour.hora/100}}:00</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(referent_day - 2,hour.hora) === null)?'':(getByDate(referent_day - 2,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(referent_day - 2,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(referent_day - 2,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(referent_day - 2,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(referent_day - 2,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(referent_day - 2,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(referent_day - 2,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+				</div>
+			</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(1,hour.hora) === null)?'':(getByDate(1,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(1,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(1,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(1,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(1,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(1,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(1,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+				</div>
+			</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(2,hour.hora) === null)?'':(getByDate(2,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(2,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(2,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(2,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(2,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(2,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(2,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+				</div>
+			</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(3,hour.hora) === null)?'':(getByDate(3,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(3,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(3,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(3,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(3,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(3,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(3,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+					{{getByDate(3,hour.hora).condicional}}
+				</div>
+			</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(4,hour.hora) === null)?'':(getByDate(4,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(4,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(4,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(4,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(4,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(4,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(4,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+					{{getByDate(4,hour.hora).condicional}}
+				</div>
+			</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(5,hour.hora) === null)?'':(getByDate(5,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(5,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(5,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(5,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(5,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(5,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(5,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+					{{getByDate(5,hour.hora).condicional}}
+				</div>
+			</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(6,hour.hora) === null)?'':(getByDate(6,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(6,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(6,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(6,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(6,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+			>
+				<div
+					*ngIf="getByDate(6,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(6,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-grid *ngIf="view===3">
+		<ion-row>
+			<ion-col size="3">
+				<ion-button (click)="add()" tabindex="-1" class="margin-button-5 futxtrm-color-dorado" style="width: 30px">
+					<mat-icon aria-label="Example icon-button icon"><ion-icon name="add-outline"></ion-icon></mat-icon>
+				</ion-button>
+			</ion-col>
+			<ion-col size="3">
+				<h5 class="text-dorado title" (click)="de_dia_a_mes()">{{monthFormat(currentMonth)}} {{yearFormat(currentDay)}}</h5>
+			</ion-col>
+			<ion-col size="6">
+				<div class="col-md-6 col-sm-12" style="text-align: right">
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="view_day(-1)" style="margin-right: 5px"><</ion-button>
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="view_day(0)">{{'today' | translate}}</ion-button>
+					<ion-button class="futxtrm-color-dorado color-blanco" (click)="view_day(1)" style="margin-left: 5px">></ion-button>
+				</div>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col></ion-col>
+			<ion-col *ngIf="days_colors_state.sun" class="futxtrm-color-dorado">
+				{{'days_short.sun' | translate}}
+				<br />
+				{{getDay(-1)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.sun">
+				{{'days_short.sun' | translate}}
+				<br />
+				{{getDay(-1)}}
+			</ion-col>
+			<ion-col *ngIf="days_colors_state.mon" class="futxtrm-color-dorado">
+				{{'days_short.mon' | translate}}
+				<br />
+				{{getDay(0)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.mon">
+				{{'days_short.mon' | translate}}
+				<br />
+				{{getDay(0)}}
+			</ion-col>
+			<ion-col *ngIf="days_colors_state.tue" class="futxtrm-color-dorado">
+				{{'days_short.tue' | translate}}
+				<br />
+				{{getDay(1)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.tue">
+				{{'days_short.tue' | translate}}
+				<br />
+				{{getDay(1)}}
+			</ion-col>
+			<ion-col *ngIf="days_colors_state.wed" class="futxtrm-color-dorado">
+				{{'days_short.wed' | translate}}
+				<br />
+				{{getDay(2)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.wed">
+				{{'days_short.wed' | translate}}
+				<br />
+				{{getDay(2)}}
+			</ion-col>
+			<ion-col *ngIf="days_colors_state.thu" class="futxtrm-color-dorado">
+				{{'days_short.thu' | translate}}
+				<br />
+				{{getDay(3)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.thu">
+				{{'days_short.thu' | translate}}
+				<br />
+				{{getDay(3)}}
+			</ion-col>
+			<ion-col *ngIf="days_colors_state.fri" class="futxtrm-color-dorado">
+				{{'days_short.fri' | translate}}
+				<br />
+				{{getDay(4)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.fri">
+				{{'days_short.fri' | translate}}
+				<br />
+				{{getDay(4)}}
+			</ion-col>
+			<ion-col *ngIf="days_colors_state.sat" class="futxtrm-color-dorado">
+				{{'days_short.sat' | translate}}
+				<br />
+				{{getDay(5)}}
+			</ion-col>
+			<ion-col *ngIf="!days_colors_state.sat">
+				{{'days_short.sat' | translate}}
+				<br />
+				{{getDay(5)}}
+			</ion-col>
+		</ion-row>
+		<ion-row *ngFor="let hour of day">
+			<ion-col size="2">{{hour.hora/100}}:00</ion-col>
+			<ion-col
+				[ngClass]="(getByDate(referent_day - 2,hour.hora) === null)?'':(getByDate(referent_day - 2,hour.hora).condicional)===1?'plantilla futxtrm-color-verde':(getByDate(referent_day - 2,hour.hora).condicional)===2?'plantilla futxtrm-color-dorado':(getByDate(referent_day - 2,hour.hora).condicional)===3?'plantilla futxtrm-color-azul':(getByDate(referent_day - 2,hour.hora).condicional)===4?'plantilla futxtrm-color-gris':(getByDate(referent_day - 2,hour.hora).condicional)===5?'plantilla futxtrm-color-rosa':''"
+				size="10"
+				style="border-bottom: solid 0.1px white"
+			>
+				<div
+					*ngIf="getByDate(referent_day - 2,hour.hora) != null;let plantilla"
+					style="text-align: center; line-height: 15px"
+					(click)="verPlantilla(getByDate(referent_day - 2,hour.hora))"
+				>
+					<ion-icon name="reader"></ion-icon>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

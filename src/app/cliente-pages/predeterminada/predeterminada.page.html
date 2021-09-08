@@ -1,0 +1,67 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>{{'user.home.choose.default.header' | translate}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<h4 class="text-center margin-button-5 text-dorado">{{'user.home.choose.default.title' | translate}} {{data.nombre}}</h4>
+	<div mat-dialog-content class="color-blanco margin-button-5 content">
+		<div class="row">
+			<div class="col-sm-12 text-center"><h6>{{'user.home.choose.default.subtitle' | translate}}</h6></div>
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-5 row" style="margin: 0">
+						<form [formGroup]="horarioForm">
+							<ion-list class="text-dorado">
+								<ion-item class="color-blanco">
+									<ion-label>{{'user.home.choose.default.hour_start' | translate}}</ion-label>
+									<ion-datetime
+										class="picker"
+										cancelText="Cancelar"
+										doneText="Aceptar"
+										displayFormat="HH:mm"
+										min="08:00"
+										max="20:00"
+										formControlName="min"
+										(ionChange)="hourChange($event)"
+									></ion-datetime>
+								</ion-item>
+								<ion-item class="color-blanco">
+									<ion-label>{{'user.home.choose.default.hour_end' | translate}}</ion-label>
+									<ion-datetime
+										class="picker"
+										readonly
+										cancelText="Cancelar"
+										doneText="Aceptar"
+										displayFormat="HH:mm"
+										formControlName="max"
+									></ion-datetime>
+								</ion-item>
+							</ion-list>
+						</form>
+					</div>
+					<div class="col-sm-7 text-center" style="margin: 0">
+						<div *ngFor="let dia of data.dias">
+							<strong><h4 class="text-center margin-button-5 text-dorado">({{dia.tipo | ejercicio}}) {{format(dia.fecha)}}</h4></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div mat-dialog-actions class="margin-actions text-center">
+		<ion-button (click)="cancelar()" tabindex="-1" class="margin-button-5 futxtrm-color-gris" style="width: 70px">
+			<ion-icon name="arrow-back"></ion-icon>
+		</ion-button>
+		<ion-button
+			(click)="aceptar()"
+			tabindex="-1"
+			class="margin-button-5 futxtrm-color-dorado"
+			style="width: 70px"
+			[disabled]="horarioForm.invalid"
+		>
+			<ion-icon name="arrow-forward"></ion-icon>
+		</ion-button>
+	</div>
+</ion-content>

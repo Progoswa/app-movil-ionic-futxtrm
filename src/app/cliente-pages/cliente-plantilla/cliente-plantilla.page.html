@@ -1,0 +1,53 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title *ngIf="plantilla">
+			<ion-icon (click)="cancelar()" name="arrow-back-outline"></ion-icon>
+			{{plantilla.nombre}}
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid *ngIf="plantilla">
+		<ion-row>
+			<ion-col size="12">
+				<ion-img src="/assets/logo.png" class="logo"></ion-img>
+			</ion-col>
+			<ion-col size="12" class="text-center">
+				<h2 class="text-dorado" style="margin: 0px">{{plantilla.categoria.nombre}}</h2>
+			</ion-col>
+		</ion-row>
+
+		<ion-row *ngFor="let seccion of plantilla.plantilla">
+			<ion-col size="12" class="text-center futxtrm-dorado">
+				<h5 class="color-blanco" style="margin: 5px">{{seccion.seccion.nombre}} ({{getTimeSeccion(seccion)}} min)</h5>
+			</ion-col>
+			<ion-grid>
+				<ion-row class="header">
+					<ion-col size="3">{{'user.template.name' | translate}}</ion-col>
+					<ion-col size="3">{{'user.template.repeat' | translate}}</ion-col>
+					<ion-col size="3">{{'user.template.requirements' | translate}}</ion-col>
+					<ion-col size="3">{{'user.template.break' | translate}}</ion-col>
+				</ion-row>
+				<ion-row *ngFor="let ejercicio of seccion.ejercicios" class="header">
+					<ion-col size="3">{{ejercicio.entrenamiento.ejercicio}}</ion-col>
+					<ion-col size="3">{{ejercicio.entrenamiento.repeticiones}}</ion-col>
+					<ion-col size="3">{{ejercicio.entrenamiento.requerimientos}} m</ion-col>
+					<ion-col size="3">{{ejercicio.entrenamiento.descanso}} s</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-row>
+		<ion-row>
+			<ion-col size="12" class="text-center futxtrm-dorado">
+				<h5 class="color-blanco" style="margin: 5px">{{'user.template.time' | translate}}: {{getTotalTime(plantilla)}} min aprox</h5>
+			</ion-col>
+		</ion-row>
+
+		<div class="text-center m-t-2r">
+			<ion-button class="background-dorado" (click)="convertirPDF()">
+				PDF
+				<ion-icon name="download"></ion-icon>
+			</ion-button>
+		</div>
+	</ion-grid>
+</ion-content>

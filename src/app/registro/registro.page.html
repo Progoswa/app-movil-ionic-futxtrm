@@ -1,0 +1,154 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{'sign_up.title' | translate}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row style="color: white">
+			<ion-img src="./assets/logo.png" class="logo"></ion-img>
+			<form [formGroup]="clienteForm" style="width: 90%">
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.name.label' | translate}}</ion-label>
+					<ion-input type="text" formControlName="nombre"></ion-input>
+				</ion-item>
+				<div class="error" *ngIf="clienteForm.controls.nombre.hasError('required') && clienteForm.controls.nombre.touched">
+					{{'sign_up.name.invalid.required' | translate}}
+				</div>
+				<div class="error" *ngIf="clienteForm.controls.nombre.hasError('pattern') && clienteForm.controls.nombre.touched">
+					{{'sign_up.name.invalid.pattern' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.last_name.label' | translate}}</ion-label>
+					<ion-input type="text" formControlName="apellido"></ion-input>
+				</ion-item>
+				<div class="error" *ngIf="clienteForm.controls.apellido.hasError('required') && clienteForm.controls.apellido.touched">
+					{{'sign_up.last_name.invalid.required' | translate}}
+				</div>
+				<div class="error" *ngIf="clienteForm.controls.apellido.hasError('pattern') && clienteForm.controls.apellido.touched">
+					{{'sign_up.last_name.invalid.pattern' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.phone.label' | translate}}</ion-label>
+
+					<ion-input type="number" formControlName="telefono"></ion-input>
+				</ion-item>
+				<div class="error" *ngIf="clienteForm.controls.telefono.hasError('required') && clienteForm.controls.telefono.touched">
+					{{'sign_up.phone.invalid.required' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.user.label' | translate}}</ion-label>
+					<ion-input type="text" formControlName="username"></ion-input>
+				</ion-item>
+				<div class="error" *ngIf="clienteForm.controls.username.hasError('required') && clienteForm.controls.username.touched">
+					{{'sign_up.user.invalid.required' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.email.label' | translate}}</ion-label>
+					<ion-input type="email" formControlName="email"></ion-input>
+				</ion-item>
+				<div class="error" *ngIf="clienteForm.controls.email.hasError('required') && clienteForm.controls.email.touched">
+					{{'sign_up.email.invalid.required' | translate}}
+				</div>
+
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.password.label' | translate}}</ion-label>
+					<ion-input formControlName="password" type="password"></ion-input>
+				</ion-item>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.password.hasError('required') && clienteForm.controls.password.touched"
+				>
+					{{'sign_up.password.invalid.required' | translate}}
+				</div>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.password.hasError('pattern') && clienteForm.controls.password.touched"
+				>
+					{{'sign_up.password.invalid.pattern' | translate}}
+				</div>
+
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.repeat_password.label' | translate}}</ion-label>
+					<ion-input formControlName="rpassword" type="password"></ion-input>
+				</ion-item>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.rpassword.hasError('required') && clienteForm.controls.rpassword.touched"
+				>
+					{{'sign_up.repeat_password.invalid.required' | translate}}
+				</div>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.rpassword.hasError('repeatInvalid') && clienteForm.controls.rpassword.touched"
+				>
+					{{'sign_up.repeat_password.invalid.repeat_invalid' | translate}}
+				</div>
+
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.country.label' | translate}}</ion-label>
+					<ion-select
+						cancelText="Cancelar"
+						okText="Aceptar"
+						[interfaceOptions]="customAlertOptions"
+						interface="alert"
+						formControlName="pais"
+						(ionChange)="getEstados($event.detail.value)"
+					>
+						<ion-select-option *ngFor="let pais of paises" [value]="pais">{{pais.name}}</ion-select-option>
+					</ion-select>
+				</ion-item>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.pais.hasError('required') && clienteForm.controls.pais.touched"
+				>
+					{{'sign_up.country.invalid.required' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.state.label' | translate}}</ion-label>
+					<ion-select
+						cancelText="Cancelar"
+						okText="Aceptar"
+						[interfaceOptions]="customAlertOptionse"
+						interface="alert"
+						formControlName="estado"
+						(ionChange)="getCitys($event.detail.value)"
+					>
+						<ion-select-option *ngFor="let estado of estados" [value]="estado">{{estado.name}}</ion-select-option>
+					</ion-select>
+				</ion-item>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.pais.hasError('required') && clienteForm.controls.pais.touched"
+				>
+					{{'sign_up.state.invalid.required' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.city.label' | translate}}</ion-label>
+					<ion-input type="text" formControlName="ciudad"></ion-input>
+				</ion-item>
+				<div
+					style="color: red; padding-top: 0.2rem; text-align: center"
+					*ngIf="clienteForm.controls.pais.hasError('required') && clienteForm.controls.pais.touched"
+				>
+					{{'sign_up.city.invalid.required' | translate}}
+				</div>
+				<ion-item fill="outline">
+					<ion-label position="floating">{{'sign_up.address.label' | translate}}</ion-label>
+					<ion-input type="text" formControlName="direccion"></ion-input>
+				</ion-item>
+				<div class="error" *ngIf="clienteForm.controls.direccion.hasError('required') && clienteForm.controls.direccion.touched">
+					{{'sign_up.address.invalid.required' | translate}}
+				</div>
+
+				<ion-button class="ingresar" expand="block" fill="outline" [disabled]="clienteForm.invalid" (click)="register()">
+					{{'sign_up.sign_up' | translate}}
+				</ion-button>
+			</form>
+		</ion-row>
+	</ion-grid>
+</ion-content>

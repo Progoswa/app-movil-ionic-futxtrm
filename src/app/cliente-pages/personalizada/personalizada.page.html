@@ -1,0 +1,88 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>{{'user.home.choose.personalized.header' | translate}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<h2 class="text-center margin-button-5 text-dorado">{{'user.home.choose.personalized.title' | translate}} {{data.nombre}}</h2>
+	<div mat-dialog-content class="color-blanco margin-button-5 content">
+		<div class="row">
+			<div class="col-sm-12 text-center"><h6>{{'user.home.choose.personalized.subtitle' | translate}}</h6></div>
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-5 row" style="margin: 0">
+						<form [formGroup]="horarioForm">
+							<ion-list class="text-dorado">
+								<ion-item class="color-blanco">
+									<ion-label>{{'user.home.choose.personalized.hour_start' | translate}}</ion-label>
+									<ion-datetime
+										class="picker"
+										cancelText="Cancelar"
+										doneText="Aceptar"
+										displayFormat="HH:mm"
+										min="08:00"
+										max="20:00"
+										formControlName="min"
+										(ionChange)="hourChange($event)"
+									></ion-datetime>
+								</ion-item>
+								<ion-item class="color-blanco">
+									<ion-label>{{'user.home.choose.personalized.hour_end' | translate}}</ion-label>
+									<ion-datetime
+										class="picker"
+										readonly
+										cancelText="Cancelar"
+										doneText="Aceptar"
+										displayFormat="HH:mm"
+										formControlName="max"
+									></ion-datetime>
+								</ion-item>
+							</ion-list>
+						</form>
+					</div>
+					<div class="col-sm-7 text-center" style="margin: 0">
+						<ion-item class="color-blanco">
+							<ion-label position="floating">{{'user.home.choose.personalized.select' | translate}}</ion-label>
+							<ion-datetime
+								class="picker"
+								displayFormat="MM/DD/YYYY"
+								cancelText="{{'cancel' | translate}}"
+								doneText="{{'accept' | translate}}"
+								[(ngModel)]="dia[0].fecha"
+								min="{{minDate}}"
+								max="{{maxDate}}"
+							></ion-datetime>
+						</ion-item>
+						<ion-item class="color-blanco">
+							<ion-label>{{'user.home.choose.personalized.type' | translate}}</ion-label>
+							<ion-select
+								cancelText="{{'cancel' | translate}}"
+								okText="{{'accept' | translate}}"
+								[interfaceOptions]="customAlertOptions"
+								interface="alert"
+								[(ngModel)]="dia[0].tipo"
+							>
+								<ion-select-option *ngFor="let tipo of tipos" [value]="tipo">{{tipo | ejercicio}}</ion-select-option>
+							</ion-select>
+						</ion-item>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div mat-dialog-actions class="margin-actions text-center">
+		<ion-button (click)="cancelar()" tabindex="-1" class="margin-button-5 futxtrm-color-gris" style="width: 70px">
+			<ion-icon name="arrow-back"></ion-icon>
+		</ion-button>
+		<ion-button
+			(click)="aceptar()"
+			tabindex="-1"
+			class="margin-button-5 futxtrm-color-dorado"
+			[disabled]="horarioForm.invalid || dia[0].tipo == 0 || dia[0].fecha == ''"
+			style="width: 70px"
+		>
+			<ion-icon name="arrow-forward"></ion-icon>
+		</ion-button>
+	</div>
+</ion-content>

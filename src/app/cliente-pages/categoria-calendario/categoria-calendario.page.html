@@ -1,0 +1,29 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>
+			<ion-icon (click)="cancelar()" name="arrow-back-outline"></ion-icon>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row class="text-center"></ion-row>
+
+		<ion-row>
+			<ion-col size="6" *ngFor="let categoria of categoriasAndTime" class="categoria">
+				<div *ngIf="(misCategorias.includes(categoria.categoria._id))">
+					<div
+						*ngIf="(misCategorias.includes(categoria.categoria._id))"
+						class="unlock"
+						(click)="verCategoria(categoria.categoria,categoria.tiempo)"
+					></div>
+
+					<ion-col size="12">
+						<ion-img [src]="getImg(categoria.categoria.imagen)" style="height: 150px"></ion-img>
+					</ion-col>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

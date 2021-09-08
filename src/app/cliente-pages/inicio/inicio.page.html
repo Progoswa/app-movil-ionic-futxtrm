@@ -1,0 +1,46 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-row>
+			<ion-col size="4"><ion-title>{{'user.home.header' | translate}}</ion-title></ion-col>
+
+			<ion-col size="4">
+				<ion-img src="/assets/logo.png" class="logo"></ion-img>
+			</ion-col>
+
+			<ion-col size="3">
+				<ion-button ngClass.xs="lang-xs" (click)="langs()" style="--background: inherit; position: fixed; right: 10px; top: 10px">
+					<ion-img style="width: 24px; height: 24px; margin-right: 5px" src="./assets/flags/{{translate.currentLang}}.png"></ion-img>
+					{{translate.currentLang}}
+				</ion-button>
+			</ion-col>
+		</ion-row>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row class="text-center">
+			<ion-col size="12"><h3 class="text-dorado" style="margin: 1px">{{'user.home.welcome' | translate}}</h3></ion-col>
+			<ion-col size="12"><h6 class="text-dorado" style="margin: 1px">{{'user.home.title' | translate}}</h6></ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col size="6" *ngFor="let categoria of categoriasAndTime" class="categoria">
+				<div *ngIf="!(misCategorias.includes(categoria.categoria._id))" class="lock" (click)="comprar()">
+					<!-- <mat-icon >lock</mat-icon> -->
+					<ion-icon class="lock-icon" name="lock-closed"></ion-icon>
+				</div>
+				<div
+					*ngIf="(misCategorias.includes(categoria.categoria._id))"
+					class="unlock"
+					(click)="verCategoria(categoria.categoria,categoria.tiempo)"
+				></div>
+
+				<ion-col size="12" class="title">{{categoria.categoria.nombre}}</ion-col>
+				<ion-col size="12">
+					<ion-img [src]="getImg(categoria.categoria.imagen)" style="height: 150px"></ion-img>
+				</ion-col>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

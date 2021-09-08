@@ -1,0 +1,168 @@
+.secciones {
+	margin-top: 20px;
+}
+
+.entrenamiento {
+	width: 340px !important;
+	height: 240px !important;
+}
+
+.entrenamientodiv {
+	display: table-cell !important;
+}
+
+.select-button {
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+}
+
+.entrenamientos {
+	overflow-x: scroll;
+}
+::-webkit-scrollbar {
+	width: 5px;
+	height: 10px;
+	border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: inherit;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(136, 136, 136, 0.527);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(85, 85, 85, 0.575);
+}
+
+::ng-deep .mat-radio-outer-circle {
+	border-color: #d0ae3d !important;
+}
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+	background-color: #d0ae3d !important;
+}
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+	color: #d0ae3d !important;
+	// opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+	color: #d0ae3d !important;
+}
+
+// mat-input error outline color
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+	color: red !important;
+	opacity: 0.8 !important;
+}
+
+// mat-input carent color
+::ng-deep .mat-input-element {
+	caret-color: white !important;
+}
+
+// mat-input error carent color
+::ng-deep .mat-form-field-invalid .mat-input-element,
+.mat-warn .mat-input-element {
+	caret-color: white !important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+	color: white !important;
+	// color: $mainColor!important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+	color: white !important;
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+	color: red !important;
+}
+
+::ng-deep .mat-select-value-text {
+	color: white !important;
+}
+
+::ng-deep .mat-input-element:disabled {
+	color: white !important;
+}
+
+.add-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.plantilla {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-style: ridge;
+	border-radius: 10px;
+	padding: 10px;
+
+	position: relative;
+}
+
+.delete {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: rgb(114, 113, 113);
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	z-index: 999;
+}
+
+.delete-plantilla {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: rgb(114, 113, 113);
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	z-index: 999;
+}
+
+.see {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.header {
+	font-size: 10px;
+	color: white;
+	font-weight: 900;
+}
+
+.ejercicio-col {
+	border-top-style: solid;
+	border-top-color: #d0ae3d;
+}
+
+.divider {
+	background: #d0ae3d;
+}
+
+.logo {
+	width: 70%;
+	margin: auto;
+}

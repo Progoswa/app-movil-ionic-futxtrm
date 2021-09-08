@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{categoria.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div class="col-sm-6 text-center">
+        <ion-img src="./assets/plantilla.PNG" alt="" width="250px"></ion-img>
+        <ion-button  class="futxtrm-color-dorado color-blanco" (click)="predeterminada()">{{'user.home.choose.default.button' | translate}}  </ion-button>
+        <h6 style="margin-top: 8px;" class="color-blanco">({{categoria.dias.length}} {{'user.home.choose.default.days' | translate}} )</h6>
+      </div>
+    </ion-row>
+  <ion-row>
+    <div class="col-sm-6 text-center">
+      <ion-img src="./assets/plantilla.PNG" alt="" width="250px"></ion-img>
+      <ion-button  class="futxtrm-color-dorado color-blanco" (click)="personalizada()">{{'user.home.choose.personalized.button' | translate}}</ion-button>
+
+     
+      <h6 style="margin-top: 8px;" class="color-blanco">{{'user.home.choose.personalized.days' | translate}}</h6>
+    </div>
+  </ion-row>
+  </ion-grid>
+
+</ion-content>

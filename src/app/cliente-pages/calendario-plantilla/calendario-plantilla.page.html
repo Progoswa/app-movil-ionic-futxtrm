@@ -1,0 +1,145 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button></ion-back-button>
+		</ion-buttons>
+		<ion-title *ngIf="categoria">{{'user.calendar.template.title' | translate}} {{categoria.nombre}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid style="margin-bottom: 60px !important">
+		<div class="text-center text-dorado">
+			<h3 *ngIf="categoria">{{formatDate(calendario.dia)}} ({{calendario.condicional | ejercicio}})</h3>
+		</div>
+		<ion-row *ngFor="let seccion of secciones">
+			<ion-col size="12">
+				<h4 class="text-dorado" style="margin: 2px">
+					{{seccion.seccion.nombre}}
+					<ion-icon style="vertical-align: middle" name="{{seccionCheck(seccion.seccion._id)?'checkmark':'remove'}}"></ion-icon>
+				</h4>
+				<p class="color-blanco" style="margin: 5px">{{seccion.seccion.descripcion}}</p>
+			</ion-col>
+			<ion-col size="12" class="color-blanco">
+				<ion-list *ngIf="seccion.seccion.bloques.length > 1">
+					<ion-radio-group [(ngModel)]="seccion.bloque">
+						<ion-item *ngFor="let bloque of seccion.seccion.bloques;let i = index">
+							<ion-label>
+								{{bloque.ejercicios}} {{'user.calendar.template.exercises' | translate}} {{bloque.minutos}}
+								{{'user.calendar.template.minutes' | translate}}
+							</ion-label>
+							<ion-radio slot="start" [value]="bloque" (ionFocus)="changeBloque(bloque,seccion.seccion._id)"></ion-radio>
+						</ion-item>
+					</ion-radio-group>
+				</ion-list>
+				<h6 *ngIf="seccion.seccion.bloques.length == 1">
+					{{seccion.bloque.ejercicios}} {{'user.calendar.template.exercises' | translate}} {{seccion.bloque.minutos}}
+					{{'user.calendar.template.minutes' | translate}}
+				</h6>
+			</ion-col>
+
+			<ion-col *ngIf="!(seccion.seccion.condicional)" class="entrenamientos">
+				<div *ngFor="let entrenamiento of seccion.entrenamientos" class="entrenamientodiv">
+					<ion-card class="entrenamiento" style="background: inherit !important">
+						<div *ngIf="entrenamiento.entrenamiento.formato == 'mp4'" style="width: 100%; height: 100%">
+							<video width="100%" height="100%" controls controlsList="nodownload">
+								<source src="{{url}}/{{entrenamiento.entrenamiento.video}}" type="video/mp4" />
+								<source src="{{url}}/{{entrenamiento.entrenamiento.video}}" type="video/ogg" />
+								<source src="{{url}}/{{entrenamiento.entrenamiento.video}}" type="video/webm" />
+								Your browser does not support the video tag.
+							</video>
+
+							<ion-fab-button
+								size="small"
+								class="select-button"
+								style="top: 0 !important"
+								[ngClass]="entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'futxtrm-color-dorado':'futxtrm-color-gris'"
+								aria-label="Example icon button with a menu icon"
+								(click)="addToPlantilla(seccion.seccion._id,entrenamiento._id)"
+							>
+								<ion-icon name="{{entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'checkmark':'add'}}"></ion-icon>
+							</ion-fab-button>
+						</div>
+						<div *ngIf="entrenamiento.entrenamiento.formato == 'vimeo'">
+							<div style="padding: 80% 0 0 0; position: relative">
+								<iframe
+									[src]="entrenamiento.entrenamiento.id_vimeo | vimeo"
+									style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+									frameborder="0"
+									allow="autoplay; fullscreen"
+									allowfullscreen
+								></iframe>
+							</div>
+							<script src="https://player.vimeo.com/api/player.js"></script>
+							<ion-fab-button
+								size="small"
+								(click)="addToPlantilla(seccion.seccion._id,entrenamiento._id)"
+								class="select-button"
+								[ngClass]="entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'futxtrm-color-dorado':'futxtrm-color-gris'"
+								aria-label="Example icon button with a menu icon"
+							>
+								<ion-icon name="{{entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'checkmark':'add'}}"></ion-icon>
+							</ion-fab-button>
+						</div>
+					</ion-card>
+				</div>
+			</ion-col>
+			<ion-col class="entrenamientos" *ngIf="(seccion.seccion.condicional)">
+				<div *ngFor="let entrenamiento of seccion.entrenamientos" class="entrenamientodiv">
+					<ion-card
+						*ngIf="entrenamiento.entrenamiento.tipo == calendario.condicional"
+						class="entrenamiento"
+						style="background: inherit !important"
+					>
+						<div *ngIf="entrenamiento.entrenamiento.formato == 'mp4'" style="width: 100%; height: 100%">
+							<video width="100%" height="100%" controls controlsList="nodownload">
+								<source src="{{url}}/{{entrenamiento.entrenamiento.video}}" type="video/mp4" />
+								<source src="{{url}}/{{entrenamiento.entrenamiento.video}}" type="video/ogg" />
+								<source src="{{url}}/{{entrenamiento.entrenamiento.video}}" type="video/webm" />
+								Your browser does not support the video tag.
+							</video>
+							<ion-fab-button
+								size="small"
+								class="select-button"
+								style="top: 0 !important"
+								[ngClass]="entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'futxtrm-color-dorado':'futxtrm-color-gris'"
+								aria-label="Example icon button with a menu icon"
+								(click)="addToPlantilla(seccion.seccion._id,entrenamiento._id)"
+							>
+								<ion-icon name=" {{entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'checkmark':'add'}}"></ion-icon>
+							</ion-fab-button>
+						</div>
+						<div *ngIf="entrenamiento.entrenamiento.formato == 'vimeo'">
+							<div style="padding: 80% 0 0 0; position: relative">
+								<iframe
+									[src]="entrenamiento.entrenamiento.id_vimeo | vimeo"
+									style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+									frameborder="0"
+									allow="autoplay; fullscreen"
+									allowfullscreen
+								></iframe>
+							</div>
+							<script src="https://player.vimeo.com/api/player.js"></script>
+							<ion-fab-button
+								size="small"
+								(click)="addToPlantilla(seccion.seccion._id,entrenamiento._id)"
+								class="select-button"
+								style="top: 0 !important"
+								[ngClass]="entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'futxtrm-color-dorado':'futxtrm-color-gris'"
+								aria-label="Example icon button with a menu icon"
+							>
+								<ion-icon name="{{entrenamientoSelected(seccion.seccion._id,entrenamiento._id)?'checkmark':'add'}}"></ion-icon>
+							</ion-fab-button>
+						</div>
+					</ion-card>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+		<ion-fab-button class="background-dorado" [disabled]="!canGenerate()" (click)="generarPlantilla()">
+			<ion-icon name="add"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+</ion-content>

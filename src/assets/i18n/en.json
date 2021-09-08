@@ -1,0 +1,1473 @@
+{
+    "logout":"Logout",
+    "accept":"Agree",
+    "cancel":"Cancel",
+    "delete":"Delete",
+    "login":{
+        "login":"Login",
+        "wrong":{
+            "title":"Invalid credentials",
+            "msg":"Incorrect user or password",
+            "button":"Okey"
+        },
+        "blocked":{
+            "title":"User blocked",
+            "msg":"Your user is blocked as it infringes FutXtrm policies. Please contact us through our means of contact",
+            "button":"Okey"
+
+        },
+        "unverified":{
+            "title": "User not verified",
+            "msg": "We sent you an email with a link to verify your account.",
+            "button": "OK"
+        },
+        "user":"Username",
+        "user_required":"The username is required",
+        "password":"Password",
+        "password_required":"The password is required",
+        "rememberme":"Remember me",
+        "forgot_password":"Forgot password?",
+        "not_account":"You do not have an account?",
+        "sign_up":"Sign up"
+    },
+    "sign_up":{
+        "title":"Create your account",
+        "personal_information":"Personal information",
+        "name":{
+            "label":"Name",
+            "placeholder":"John",
+            "invalid":{
+                "required":"The name is required",
+                "pattern":"The name cannot contain numbers or special characters"
+            }
+        },
+        "last_name":{
+            "label":"Last name",
+            "placeholder":"Doe",
+            "invalid":{
+                "required":"Last name is required",
+                "pattern":"The last name cannot contain numbers or special characters"
+            }
+        },
+        "phone":{
+            "label":"Phone number",
+            "invalid":{
+                "required":"Required phone number",
+                "pattern":"Invalid number"
+            }
+        },
+        "country":{
+            "label":"Country",
+            "invalid":{
+                "required":"You must select your country"
+            }
+        },
+        "state":{
+            "label":"State",
+            "invalid":{
+                "required":"You must select the state"
+            }
+        },
+        "city":{
+            "label":"City",
+            "invalid":{
+                "required":"City is required"
+            }
+        },
+        "address":{
+            "label":"Address",
+            "invalid":{
+                "required":"You must enter your address"
+            }
+        },
+        "access_data":"Access data",
+        "email":{
+            "label":"Email",
+            "placeholder":"john@gmail.com",
+            "invalid":{
+                "required":"Email is required",
+                "pattern":"Email is invalid"
+            }
+        },
+        "user":{
+            "label":"User",
+            "placeholder":"John67",
+            "invalid":{
+                "required":"Username is required"
+            }
+        },
+        "password":{
+            "label":"Password",
+            "invalid":{
+                "required":"Password is required",
+                "pattern":"The password must be between 8 and 16 characters, at least one digit, one lower case, one upper case and one non-alphanumeric character (*?&% ...)."
+            }
+        },
+        "repeat_password":{
+            "label":"Repeat password",
+            "invalid":{
+                "required":"Please repeat the password",
+                "pattern":"The password must have a minimum of 8 characters",
+                "repeat_invalid":"The password does not match"
+            }
+        },
+        "sign_up":"Sign up",
+        "have_account":"I already have an account",
+        "error":{
+            "email":{
+                "title":"Email in use",
+                "msg":"The email is already registered"
+            },
+            "user":{
+                "title":"User in use",
+                "msg":"Username is already registered"
+            }
+        },
+        "success":{
+            "title":"Successful registration",
+            "msg":"Your registration has been completed successfully, check your email",
+            "button":"Okey"
+        }
+    },
+    "recover_password":{
+        "title":"Do you have problems to enter?",
+        "msg":"Enter your email and we will send you a link to regain access to your account.",
+        "email":{
+            "label":"Email",
+            "placeholder":"john@gmail.com",
+            "invalid":{
+                "required":"Email is required",
+                "pattern":"Email is invalid"
+            }
+        },
+        "button":"Enviar enlace de acceso",
+        "back":"Send access link",
+        "success":{
+            "title":"Email sent",
+            "msg":"An email has been sent with a link to recover your password",
+            "button":"Okey"
+        },
+        "failed":{
+            "title":"Invalid email",
+            "msg":"There is no account registered with this email",
+            "button":"Okey"
+        }
+    },
+    "not_verified":{
+        "title":"Account not verified",
+        "initial_msg":"We send an email to",
+        "final_msg":"to verify your account",
+        "no_received":"Haven't received it yet?",
+        "resend":"Resend e-mail",
+        "back":"Back to login",
+        "success":{
+            "title":"Email sent",
+            "msg":"An email has been sent with a link to verify your account",
+            "button":"Okey"
+        }
+
+    },
+    "new_password":{
+        "title":"New Password",
+        "subtitle":"Enter your new password",
+        "password":{
+            "label":"New Password",
+            "required":"The password is required"
+        },
+        "rpassword":{
+            "label":"Repeat password",
+            "required":"Please enter your password again",
+            "repeat":"Passwords do not match"
+        },
+        "button":"Change Password",
+        "err":{
+            "title":"Link expired",
+            "subtitle":"This link is no longer available",
+            "back":"Back to login"
+        },
+        "success":{
+            "title":"Successful change",
+            "msg":"Your password has been successfully reset",
+            "button":"Okey"
+        }
+       
+    },
+    "today":"Today",
+    "langs":{
+        "close":"Close"
+    },
+    "days":{
+        "monday":"Monday",
+        "tuesday":"Tuesday",
+        "wednesday":"Wednesday",
+        "thursday":"Thursday",
+        "friday":"Friday",
+        "saturday":"Saturday",
+        "sunday":"Sunday"
+    },
+    "days_short":{
+        "mon":"Mon",
+        "tue":"Tue",
+        "wed":"Wed",
+        "thu":"Thu",
+        "fri":"Fri",
+        "sat":"Sat",
+        "sun":"Sun"
+    },
+    "types":{
+        "strength":"Strength",
+        "speed":"Speed",
+        "resistance":"Resistance",
+        "coordination":"Coordination",
+        "coordinating_capacity":"Coordinating Capacity",
+        "no_type":"No type"
+
+    },
+    "months":{
+        "1": "JANUARY",
+        "2": "FEBRUARY",
+        "3": "MARCH",
+        "4": "APRIL",
+        "5": "MAY",
+        "6": "JUNE",
+        "7":"JULY",
+        "8": "AUGUST",
+        "9": "SEPTEMBER",
+        "10": "OCTOBER",
+        "11": "NOVEMBER",
+        "12": "DECEMBER"
+    },
+    "months_short":{
+        "1": "JAN",
+        "2": "FEB",
+        "3": "MAR",
+        "4": "APR",
+        "5": "MAY",
+        "6": "JUN",
+        "7": "JUL",
+        "8": "AUG",
+        "9": "SEP",
+        "10": "OCT",
+        "11": "NOV",
+        "12": "DEC"
+    },
+    "sidebar":{
+
+    "home":"Home",
+    "calendar":"Calendar",
+    "templates":"Templates"
+        
+    },
+    "header":{
+        "admin":{
+            "user":{
+                "profile":"Profile",
+                "notifications":"Notifications",
+                "logout":"Log Out"
+            },
+            "notifications":{
+                "title":"Notifications",
+                "all":"All Notifications"
+            }
+        },
+        "client":{
+            "user":{
+                "profile":"Profile",
+                "notifications":"Notifications",
+                "logout":"Log Out"
+            },
+            "notifications":{
+                "title":"Notifications",
+                "all":"All Notifications"
+            }
+        }
+    },
+    "breadcrumb":{
+        "admin":{
+           "home":{
+                "title":"Home",
+                "title1":"Home"
+            },
+           "users":{
+                "title":"Users",
+                "title1":"Home",
+                "title2":"Users"
+            } ,
+            "roles":{
+                "title":"Users",
+                "title1":"Home",
+                "title2":"Users",
+                "title3":"Roles and Permissions"
+            },
+            "new_role":{
+                "title":"Users",
+                "title1":"Home",
+                "title2":"Users",
+                "title3":"Roles and Permissions",
+                "title4":"New role"
+            },
+            "edit_role":{
+                "title":"Users",
+                "title1":"Home",
+                "title2":"Users",
+                "title3":"Roles and Permissions",
+                "title4":"Edit role"
+            },
+            "add_user":{
+                "title":"Add",
+                "title1":"Home",
+                "title2":"Users",
+                "title3":"New Administrator"
+            },
+            "consult_user":{
+                "title":"Consult",
+                "title1":"Home",
+                "title2":"Users",
+                "title3":"Consult"
+            },
+            "categories":{
+                "title":"Categories",
+                "title1":"Home",
+                "title2":"Settings",
+                "title3":"Categories"
+            },
+            "sections":{
+                "title":"Sections",
+                "title1":"Home",
+                "title2":"Settings",
+                "title3":"Categories",
+                "title4":"Sections"
+            },
+            "exercises":{
+                "title":"Exercises",
+                "title1":"Home",
+                "title2":"Settings",
+                "title3":"Exercises"
+            },
+            "exercises_section":{
+                "title":"Exercises per Section",
+                "title1":"Home",
+                "title2":"Settings",
+                "title3":"Categories",
+                "title4":"Sections",
+                "title5":"Exercises"
+            },
+            "audits":{
+                "title":"Audits",
+                "title1":"Home",
+                "title2":"Audit"
+            },
+            "profile":{
+                "title":"Profile",
+                "title1":"Home",
+                "title2":"Profile"
+            },
+            "notifications":{
+                "title":"Notifications",
+                "title1":"Home",
+                "title2":"Notifications"
+            },
+            "payments":{
+                "title":"Payments",
+                "title1":"Home",
+                "title2":"Payments"
+            },
+            "payment":{
+                "title":"Payments",
+                "title1":"Home",
+                "title2":"Payments",
+                "title3":"Payment"
+            },
+            "bulk_load":{
+                "title":"Bulk Load",
+                "title1":"Home",
+                "title2":"Bulk Load"
+            
+            },
+            "free_categories":{
+                "title":"Free Categories",
+                "title1":"Home",
+                "title2":"Free Categories"
+                
+            },
+            "memberships":{
+                "title":"Membership",
+                "title1":"Home",
+                "title2":"Membership"
+                
+            }
+        }
+    },
+    "modals":{
+        "delete":{
+            "title":"Are you sure you want to delete?",
+            "cancel":"Cancel",
+            "delete":"Delete"
+        },
+        "agree":{
+            "cancel":"Cancel",
+            "agree":"Agree"
+        },
+        "success":{
+            "button":"Okey"
+        }
+    },
+    "pages":{
+        "home":{
+            "welcome":"Welcome to FutXtrm",
+            "registered":"Registered Clients",
+            "available":"Available Categories",
+            "payments":"Payments in the current month",
+            "total":"Total amount for payments"
+        },
+        "audits":{
+            "title":"User Actions",
+            "excel":"Export to  Excel",
+            "pdf":"Export to PDF",
+            "user":"User",
+            "name":"Name",
+            "action":"Action",
+            "date":"Date",
+            "search":"Seek action",
+            "generate":{
+                "pdf":{
+                    "title":"Generating PDF",
+                    "subtitle":"Your PDF will download soon"
+                },
+                "xlsx":{
+                    "title":"Generating XLSX",
+                    "subtitle":"Your Excel file will download soon"
+                }
+            }
+          
+            
+        },
+        "payments":{
+            "categories":{
+                "name": "Categories",
+                "title": "Category payments",
+                "excel": "Export to Excel",
+                "pdf": "Export to PDF",
+                "client": "Client",
+                "categorie": "Category",
+                "date": "Date",
+                "search": "Search",
+                "options": "Options",
+                "tooltip": {
+                    "check": "Check payment",
+                    "delete": "Delete payment"
+                },
+                "payment":{
+                    "title": "Category Request",
+                    "accepted": "Accepted",
+                    "canceled": "Cancelada",
+                    "msg0": "you are requesting to buy",
+                    "msg1": "buy",
+                    "msg2": "Is request to buy",
+                    "the": "the Category",
+                    "date": "Date:",
+                    "amount": "Amount:",
+                    "method": "Method:",
+                    "number": "Reference number:",
+                    "capture": "Capture",
+                    "refuse": "Reject",
+                    "accept": "Accept",
+                    "try":{
+                        "accept": {
+                            "title": "Accept application",
+                            "subtitle": "Do you want to accept this purchase request?"
+                        },
+                        "refuse": {
+                            "title": "Reject application",
+                            "subtitle": "Do you want to reject this purchase request?"
+
+                        }
+                    },
+                    "success":{
+                        "accept":{
+                            "title": "Payment approved",
+                            "subtitle": "You have released the Category"
+                        },
+                        "refuse":{
+                            "title": "Payment rejected",
+                            "subtitle": "You have rejected this payment"
+
+                        }
+                    }
+                }
+            },
+            "membership":{
+                "name": "Memberships",
+                "title": "Membership payments",
+                "excel": "Export to Excel",
+                "pdf": "Export to PDF",
+                "client": "Client",
+                "membership": "Membership",
+                "date": "Date",
+                "search": "Search",
+                "options": "Options",
+                "tooltip": {
+                    "check": "Check payment",
+                    "delete": "Delete payment"
+                },
+                "payment": {
+                    "title": "Membership registration",
+                    "msg": "I buy the membership",
+                    "date": "Date:",
+                    "amount": "Amount:",
+                    "method": "Method:",
+                    "number": "Reference number:"
+                 
+                }
+            },
+            "pdf": {
+                "generate": {
+                    "title": "Generating PDF",
+                    "subtitle": "Your PDF will be downloaded soon"
+                }
+            },
+            "xlsx": {
+                "generate": {
+                    "title": "Generating XLSX",
+                    "subtitle": "Your Excel file will be downloaded soon"
+                }
+            },
+            "delete": {
+                "title": "Record deleted",
+                "subtitle": "A payment record was deleted"
+            }
+      
+        },
+        "membership":{
+            "options": {
+                "edit": "Edit",
+                "enable": "Enable",
+                "disable": "disable",
+                "delete": "Delete"
+            },
+            "new": {
+                "msg": "New Membership",
+                "title": "New Membership",
+                "name": "Name",
+                "description": "Description",
+                "image": "Select an image for the Membership",
+                "categories": "Select the Categories",
+                "prices": "Prices for months",
+                "month": "Month",
+                "months": "Months",
+                "price": "Price",
+                "discount": "Discount",
+                "cancel": "Cancel",
+                "create": "Create"
+            },
+            "edit": {
+                "msg": "Edit Membership",
+                "title": "Edit Membership",
+                "name": "Name",
+                "description": "Description",
+                "image": "Select an image for the Membership",
+                "categories": "Select the Categories",
+                "prices": "Prices for months",
+                "month": "Month",
+                "months": "Months",
+                "price": "Price",
+                "discount": "Discount",
+                "cancel": "Cancel",
+                "save": "Save"
+            }
+        
+       },
+       "free_categories":{
+            "msg": {
+                "edit": "Edit message",
+                "remove": "Remove Category",
+                "add": "Add Category"
+            },
+            "edit_text": {
+                "msg": "Free Categories",
+                "title": "Title",
+                "message": "Message",
+                "days": "Days",
+                "cancel": "Cancel",
+                "edit": "Edit"
+            },
+            "add": {
+                "title": "New Free Category",
+                "select": "Select Category",
+                "cancel": "Cancel",
+                "add": "Add"
+            }
+        },
+       "bulk_load":{
+           "categorie":{
+                "title": "Categories",
+                "subtitle": "Load .xlsx file (Excel) for Categories",
+                "button": "Upload File",
+                "load": {
+                    "title": "Bulk Upload Categories",
+                    "select": "Select a file for Categories",
+                    "cancel": "Cancel",
+                    "load": "Load"
+                },
+                "success": {
+                    "title": "Upload successful",
+                    "subtitle": "The Categories file has been loaded, please verify"
+                },
+                "failed": {
+                    "title": "Error loading",
+                    "subtitle": "Please check the file or upload a file with the correct format"
+                }
+            },
+           "sections":{
+                "title": "Sections",
+                "subtitle": "Load .xlsx file (Excel) for Sections",
+                "button": "Upload File",
+                "load": {
+                    "title": "Bulk loading Sections",
+                    "select": "Select Category",
+                    "select2": "Select a file for Sections",
+                    "cancel": "Cancel",
+                    "load": "Load"
+                },
+                "success": {
+                 "title": "Upload successful",
+                 "subtitle": "Sections file has been loaded, please verify"
+             },
+             "failed": {
+                 "title": "Error loading",
+                 "subtitle": "Please check the file or upload a file with the correct format"
+             }
+          
+            },
+           "exercises":{
+            "title": "Exercises",
+            "subtitle": "Load .xlsx file (Excel) for Exercises",
+            "button": "Upload File",
+            "load": {
+                "title": "Bulk Loading Exercises",
+                "select": "Select Category",
+                "select2": "Select Section",
+                "select3": "Select a file for Exercises",
+                "cancel": "Cancel",
+                "load": "Load"
+                },
+            "success": {
+                "title": "Upload successful",
+                "subtitle": "The Exercise file has been loaded, please verify"
+                },
+            "failed": {
+                "title": "Error loading",
+                "subtitle": "Please check the file or upload a file with the correct format"
+                }
+            }
+       },
+       "roles":{
+        "title": "Roles and Permissions",
+        "search": "Search",
+        "name": "Name",
+        "date": "Date",
+        "options": "Options",
+        "msg": {
+            "new": "New role",
+            "delete": "Delete role",
+            "edit": "Edit role"
+        },
+        "deleted": {
+             "title": "Role removed",
+             "subtitle": "The Role was eliminated"
+        },
+        "edit": {
+            "title": "Edit role",
+            "button": "Edit role",
+            "msg": {
+             "create": {
+                 "title": "Edit role",
+                 "subtitle": "Are you sure you want to modify this role?"
+             },
+             "success": {
+                 "title": "Modified Role",
+                 "subtitle": "The Role was modified successfully"
+             }
+         }
+        },
+        "new": {
+            "title": "New role",
+            "name": "Name",
+            "users": {
+                "title": "Users",
+                "create": "Create administrator",
+                "change": "Change state",
+                "delete": "Delete",
+                "consult": "Consult"
+            },
+            "roles": {
+                "title": "Roles",
+                "create": "Create",
+                "edit": "Edit",
+                "delete": "Delete",
+                "add": "Assign"
+            },
+            "categories": {
+                "title": "Categories",
+                "create": "Create",
+                "edit": "Edit",
+                "delete": "Delete"
+            },
+             "exercises": {
+                "title": "Exercises",
+                "load": "Load",
+                "edit": "Edit",
+                "delete": "Delete"
+            },
+             "sections": {
+                "title": "Sections",
+                "create": "Create",
+                "edit": "Edit",
+                "delete": "Delete",
+                "add": "Add training",
+                "remove": "Remove training"
+            },
+             "payments": {
+                "title": "Payments",
+                "delete": "Delete",
+                "accept": "Accept / Reject"
+            },
+            "button": "Register",
+            "msg": {
+                "create": {
+                    "title": "Create role",
+                    "subtitle": "Are you sure you want to create this Role?"
+                },
+                "success": {
+                    "title": "New role",
+                    "subtitle": "The role was created successfully"
+                }
+            }
+        }
+    },
+       "exercises":{
+        "title": "Exercises",
+        "search": "Search",
+        "exercise": "Exercise",
+        "type": "Type of exercise",
+        "date": "Date",
+        "options": "Options",
+        "see": {
+            "msg": "See exercise",
+            "title": "Exercise",
+            "name": "Exercise",
+            "description": "Description",
+            "requirements": "Requirements",
+            "type": "Select if you want, the type of exercise",
+            "repeat": "Repeats",
+            "break": "Break (seconds)",
+            "time": "Time per exercise (minutes)",
+            "mp4": "Video (mp4)",
+            "vimeo": "Video ID (VIMEO)"
+        },
+        "edit": {
+             "msg": "Edit exercise",
+             "title": "Edit Exercise",
+             "name": "Exercise",
+             "description": "Description",
+             "requirements": "Requirements",
+             "type": "Select if you want, the type of exercise",
+             "repeat": "Repeats",
+             "break": "Break (seconds)",
+             "time": "Time per exercise (minutes)",
+             "type_video": "Select the type of video to load",
+             "type_mp4": "Upload video (mp4)",
+             "type_vimeo": "VIMEO platform",
+             "mp4": "Video (mp4)",
+             "vimeo": "Enter the video ID (VIMEO)",
+             "gif": "Select a GIF to load!",
+             "cancel": "Cancel",
+             "save": "Save changes",
+             "success": {
+                 "title": "Exercise edited",
+                 "subtitle": "The changes were made in the Exercise"
+             }
+        },
+        "section": {
+             "title": "Section Exercise:",
+             "name": "Exercise",
+             "date": "Date",
+             "options": "Options",
+             "delete": {
+                 "msg": "Delete Exercise",
+                 "title": "Exercise deleted",
+                 "subtitle": "An Exercise was eliminated"
+             },
+             "see": {
+                 "msg": "See Exercise",
+                 "name": "Exercise",
+                 "repeat": "Repeats",
+                 "description": "Description",
+                 "requirements": "Requirements",
+                 "type": "Type of exercise"
+             },
+             "new": {
+                 "msg": "Load Exercise",
+                 "title": "New Exercise",
+                 "name": "Exercise",
+                 "name_placeholder": "Name of the Exercise to load",
+                 "description": "Description",
+                 "requirements": "Requirements",
+                 "type": "Select if you want, the type of exercise",
+                 "repeat": "Repeats",
+                 "repeat_placeholder": "Example 2 x 10",
+                 "break": "Break (seconds)",
+                 "time": "Time per exercise (minutes)",
+                 "type_video": "Select the type of video to load",
+                 "type_mp4": "Upload video (mp4)",
+                 "type_vimeo": "VIMEO platform",
+                 "mp4": "Video (mp4)",
+                 "vimeo": "Enter the video ID (VIMEO)",
+                 "gif": "Select a GIF to load!",
+                 "cancel": "Cancel",
+                 "save": "Load exercise",
+                 "success": {
+                     "title": "New Exercise",
+                     "subtitle": "Exercise created successfully"
+                 }
+             }
+        },
+        "delete": {
+            "msg": "Delete Exercise",
+            "success": {
+             "title": "Exercise deleted",
+             "subtitle": "Exercise was eliminated:"
+         }
+         
+        }
+        
+    },
+       "categories":{
+        "title": "Categories",
+        "search": "Search",
+        "name": "Name",
+        "date": "Date",
+        "sections": "Sections",
+        "see_sections": "See Sections",
+        "options": "Options",
+        "new": {
+            "msg": "New Category",
+            "month": "Month",
+            "months": "Months",
+            "title": "New Category",
+            "data": "Category data",
+            "name": "Enter the name of the Category",
+            "frequency": "Enter routine frequency as: 1 time per day",
+            "prices": "Prices for months",
+            "price": "Price",
+            "discount": "Discount",
+            "default": "Default template",
+            "type_day": "Type of exercise per day",
+            "select": "Select a day and assign it a Coordinating Capacity",
+            "day": "Day",
+            "type": "Type",
+            "add": "Add day",
+            "remove": "Remove day",
+            "description": "Enter a description of the Category to create",
+            "image": "Select an image for the Category",
+            "cancel": "Cancel",
+            "create": "Create Category",
+            "success": {
+                "title": "New Category",
+                "subtitle": "Category created successfully"
+            }
+        },
+        "edit": {
+            "msg": "Edit Category",
+            "title": "Edit Category",
+            "data": "Category data",
+            "name": "Enter the name of the Category",
+            "frequency": "Enter routine frequency as: 1 time per day",
+            "prices": "Prices for months",
+            "month": "Month",
+            "months": "Months",
+            "price": "Price",
+            "discount": "Discount",
+            "default": "Default template",
+            "type_day": "Type of exercise per day",
+            "select": "Select a day and assign it a Coordinating Capacity",
+            "day": "Day",
+            "type": "Type",
+            "add": "Add day",
+            "remove": "Remove day",
+            "description": "Enter a description of the Category to create",
+            "image": "Select an image for the Category",
+            "cancel": "Cancel",
+            "update": "Edit",
+            "success": {
+                "title": "Category modified",
+                "subtitle": "Changes were made in the Category"
+            }
+        },
+        "see": {
+            "msg": "see Category",
+            "tilte": "Category",
+            "data": "Category data",
+            "name": "Category name",
+            "frequency": "Routine frequency",
+            "prices": "Prices for months",
+            "month": "Month",
+            "months": "Months",
+            "price": "Price",
+            "discount": "Discount",
+            "default": "Default template",
+            "type_day": "Type of exercise per day",
+            "day": "Day",
+            "type": "Type",
+            "description": "Description"
+           
+        },
+        "delete": {
+            "msg": "Remove Category",
+            "title": "Category removed",
+            "subtitle": "The Category was deleted:"
+        }
+    },
+       "sections":{
+        "title": "Category Sections",
+        "search": "Search",
+        "name": "Name",
+        "description": "Description",
+        "date": "Date",
+        "options": "Options",
+        "exercies": "Exercises",
+        "new": {
+            "msg": "New Section",
+            "title": "New Section",
+            "name": "Name",
+            "name_required": "The name is required",
+            "msg_conditional": "(check only if it is the Conditional Section)",
+            "conditional": "Conditional Section",
+            "block_msg": "Training Blocks",
+            "minuts": "Minutes",
+            "amount": "Amount of Exercises",
+            "duration": "Approximate duration in minutes:",
+            "description": "Description",
+            "description_required": "Description is required",
+            "cancel": "Cancel",
+            "create": "Create",
+            "success": {
+                "title": "New Section",
+                "subtitle": "A new Section was created. Remember to assign the Exercises to the created Section now"
+            }
+        },
+        "edit": {
+            "msg": "Edit Section",
+            "title": "Edit Section",
+            "name": "Name",
+            "name_required": "The name is required",
+            "msg_conditional": "(check only if it is the Conditional Section)",
+            "conditional": "Conditional Section",
+            "block_msg": "Training Blocks",
+            "minuts": "Minutes",
+            "amount": "Amount of Exercises",
+            "duration": "Approximate duration in minutes:",
+            "description": "Description",
+            "description_required": "Description is required",
+            "cancel": "Cancel",
+            "save": "Save",
+            "success": {
+                "title": "Edited section",
+                "subtitle": "Changes were made to Section:"
+            }
+        },
+        "see": {
+            "msg": "See Section",
+            "title": "Section",
+            "name": "Name",
+            "conditional": "Conditional Section",
+            "blocks": "Blocks",
+            "minuts": "Blocks (minutes)",
+            "amount": "Amount of Exercises",
+            "duration": "Approximate duration in minutes:",
+            "description": "Description"
+           
+        },
+        "delete": {
+            "msg": "Delete Section",
+            "title": "Deleted section",
+            "subtitle": "Section was removed:" 
+        }
+    },
+       "notifications":{
+            "title": "My notifications",
+            "see": "Seen",
+            "new": "New"
+        },
+       "profile":{
+        "admin": "Administrator",
+        "client": "Client",
+        "email": "Email",
+        "phone": "Telephone",
+        "address": "Address",
+        "profile": {
+            "title": "Profile",
+            "name": "Name",
+            "last_name": "Surname",
+            "phone": "Telephone",
+            "country": "Country",
+            "state": "State",
+            "city": "City",
+            "address": "Address",
+            "save": "Save",
+            "success": {
+                "title": "Change made!",
+                "subtitle": "Your profile was modified successfully!"
+            }
+        },
+        "security": {
+            "title": "Security",
+            "email": "Email",
+            "email_required": "The email cannot be empty",
+            "email_pattern": "The email is invalid",
+            "username": "Username",
+            "username_required": "The username cannot be left empty",
+            "current_password": "Current password *",
+            "current_password_required": "The password is required",
+            "check": "Mark the Checkbox if you want to change the password",
+            "new_password": "New Password",
+            "new_password_pattern": "The password must have between 8 and 16 characters, at least one digit, one lowercase, one uppercase and one non-alphanumeric character (*? &% ...).",
+            "repeat_password": "Repeat Password",
+            "repeat_password_invalid": "Password does not match",
+            "save": "Save",
+             "failed": {
+                 "title": "Wrong password!",
+                 "subtitle": "To change the data you must enter the correct password"
+             }
+        }
+    },
+       "users":{
+        "title": "Users",
+        "search": "Search",
+        "users": "Users",
+        "name": "Name and surname",
+        "roles": "Administrator role",
+        "add": {
+            "msg": "Assign Role",
+            "title": "Assign role",
+            "role": "Administrator Role",
+            "requerid": "You must assign an Administrator role",
+            "cancel": "Cancel",
+            "add": "Assign role"
+        },
+        "role_client": "Client",
+        "date": "Date",
+        "status": "User enabled",
+        "verified": "Verified User",
+        "options": "Options",
+        "see": {
+            "msg": "Consult user",
+            "email": "Email",
+            "user": "User",
+            "phone": "Telephone",
+            "address": "Address",
+            "profile": {
+             "title": "Profile",
+             "name": "Name",
+             "last_name": "Surname",
+             "phone": "Telephone",
+             "country": "Country",
+             "state": "State",
+             "city": "City",
+             "address": "Address",
+             "back": "Return"
+            }
+            
+        },
+        "new": {
+            "msg": "New Administrator",
+            "title": "New Administrator",
+            "yam":{
+                "label": "Name",
+                "required": "The name is required",
+                "pattern": "The name cannot contain numbers or special characters"
+            },
+            "last_name": {
+                "label": "Surname",
+                "required": "The last name is required",
+                "pattern": "The last name cannot contain numbers or special characters"
+            },
+            "phone": {
+                "label": "Telephone",
+                "required": "Telephone required",
+                "pattern": "Invalid Number"
+            },
+            "email":{
+                "label": "Email",
+                "required": "The email is required",
+                "pattern": "The email is not valid"
+            },
+            "username": {
+                "label": "Username",
+                "required": "The username is required"
+            },
+            "country": "Country",
+            "state": "State",
+            "city": "City",
+            "address": {
+                "label": "Address",
+                "required": "You must enter your address"
+            },
+            "role": {
+                "label": "Administrator role",
+                "required": "You must assign an administrator role"
+            },
+            "button": "Register",
+            "success": {
+                "title": "Registered Administrator",
+                "subtitle": "The Administrator registered with the username"
+            },
+            "failed": {
+                "email":{
+                    "title": "Mail in use",
+                    "subtitle": "The email is already registered"
+                },
+                "username": {
+                    "title": "User in use",
+                    "subtitle": "The username is already registered"
+                }
+            }
+        }
+    }
+    },
+    "user":{
+        "start": {
+            "categorie": {
+                "title": "Acquire Category",
+                "subtitle": "In order to continue, you must purchase one of our Categories or you can purchase one",
+                "membership": "Membership",
+                "next": {
+                    "title": "Acquire Category",
+                    "subtitle": "Are you sure you have to choose this Category?"
+                }
+            },
+            "membership": {
+                "title": "Acquire Memberships",
+                "subtitle": "In order to continue, you must purchase one of our Memberships or you can purchase one",
+                "categorie": "Category",
+                "next": {
+                    "title": "Acquire Membership",
+                    "subtitle": "Are you sure you choose this Membership?"
+                }
+            },
+            "button": "Next",
+            "free": "Try a FREE Category !!"
+
+        },
+        "free": {
+            "button": "Next",
+            "categorie": "Acquire a category",
+            "next": {
+                "title": "Free category",
+                "subtitle": "Are you sure you want to choose this Category?"
+            }
+        },
+        "categorie_payment": {
+            "title": "Category",
+            "subtitle": "How long do you want to buy this Category?",
+            "month_by": "Month by",
+            "months_by": "Months by",
+            "pay": "How do you want to pay?",
+            "card": {
+                "title": "Credit Card",
+                "subtitle": "Credit Card or try with",
+                "other": "ANOTHER METHOD",
+                "number": {
+                    "label": "Credit Card Number",
+                    "invalid": "The number must be made up of 16 digits"
+                },
+                "date": {
+                    "label": "Expiration date",
+                    "placeholder": "(MM / YYYY)",
+                    "invalid": "The expiration date is required"
+                    
+                },
+                "cvc": {
+                    "label": "CVC",
+                    "invalid": "The CVC must be made up of 3 digits"
+                },
+                "button": "Process payment",
+                "proccess": {
+                    "title": "Processing payment",
+                    "subtitle": "Please wait while we process your payment ..."
+                },
+                "success": {
+                    "title": "Payment processed",
+                    "subtitle": "Your payment has been successfully processed ..."
+                },
+                "error":{
+                    "10": {
+                        "title": "Payment not processed",
+                        "subtitle": "The card number is invalid"
+                    },
+                    "eleven":{
+                        "title": "Payment not processed",
+                        "subtitle": "Invalid expiration year"
+                    },
+                    "12": {
+                        "title": "Payment not processed",
+                        "subtitle": "Invalid expiration month"
+                    },
+                    "default": {
+                        "title": "Payment not processed",
+                        "subtitle": "An error occurred while trying to process the payment"
+                    }
+                }
+            },
+            "offline": {
+                "title": "Offline Payments",
+                "subtitle": "Pay offline or try with",
+                "other": "ANOTHER METHOD",
+                "msg": "To buy a Category by the Offline Method you must contact our team for information",
+                "number": {
+                    "label": "Bank Reference Number",
+                    "invalid": "The Bank Reference Number is required"
+                },
+                "capture": {
+                    "label": "Transfer capture",
+                    "invalid": "Capture is required"
+
+                },
+                "button": "Send payment",
+                "success": {
+                    "title": "Payment in process",
+                    "subtitle": "Your payment will be verified by the FutXtrm team ... '"
+                },
+                "error":{
+                    "title": "Oops!",
+                    "subtitle": "An error occurred while trying to load your payment, try again later. '"
+ 
+                }
+
+            },
+            "paypal": {
+                "title": "You are about to acquire the category",
+                "month": "Month",
+                "months": "Months",
+                "amount": "Amount",
+                "discount": "Discount",
+                "total": "Total to pay",
+                "approve": {
+                    "title": "Payment processed",
+                    "subtitle": "Your payment was processed correctly"
+                },
+                "cancel": {
+                    "title": "Payment canceled",
+                    "subtitle": "Your payment could not be processed, please try again later"
+                },
+                "error":{
+                    "title": "An error has occurred",
+                    "subtitle": "Your payment could not be processed, please try again later"
+                }
+            }
+        },
+        "membership_payment": {
+            "title": "Membership",
+            "subtitle": "How long do you want to buy this membership?",
+            "month_by": "Month by",
+            "months_by": "Months by",
+            "card": {
+                "title": "Credit Card",
+                "number": {
+                    "label": "Credit Card Number",
+                    "invalid": "The number must be made up of 16 digits"
+                },
+                "date": {
+                    "label": "Expiration date",
+                    "placeholder": "(MM / YYYY)",
+                    "invalid": "The expiration date is required"
+                    
+                },
+                "cvc": {
+                    "label": "CVC",
+                    "invalid": "The CVC must be made up of 3 digits"
+                },
+                "button": "Process payment",
+                "proccess": {
+                    "title": "Processing payment",
+                    "subtitle": "Please wait while we process your payment ..."
+                },
+                "success": {
+                    "title": "Payment processed",
+                    "subtitle": "Your payment has been successfully processed ..."
+                },
+                "error":{
+                    "10": {
+                        "title": "Payment not processed",
+                        "subtitle": "The card number is invalid"
+                    },
+                    "eleven":{
+                        "title": "Payment not processed",
+                        "subtitle": "Invalid expiration year"
+                    },
+                    "12": {
+                        "title": "Payment not processed",
+                        "subtitle": "Invalid expiration month"
+                    },
+                    "default": {
+                        "title": "Payment not processed",
+                        "subtitle": "An error occurred while trying to process the payment"
+                    }
+                }
+            },
+            "paypal": {
+                "title": "You are about to acquire the Membership",
+                "month": "Month",
+                "months": "Months",
+                "amount": "Amount",
+                "discount": "Discount",
+                "total": "Total to pay",
+                "approve": {
+                    "title": "Payment processed",
+                    "subtitle": "Your payment was processed correctly"
+                },
+                "cancel": {
+                    "title": "Payment canceled",
+                    "subtitle": "Your payment could not be processed, please try again later"
+                },
+                "error":{
+                    "title": "An error has occurred",
+                    "subtitle": "Your payment could not be processed, please try again later"
+                }
+            }
+        },
+        "home":{
+            "header":"Home",
+            "welcome": "Welcome to FutXtrm",
+            "title": "Categories, choose a Category",
+            "blocked": {
+                "title": "Category blocked",
+                "msg": "You have not yet unlocked this Category",
+                "button": "OK"
+            },
+            "choose": {
+                "title": "Category",
+                "personalized": {
+                    "header":"Personalized",
+                    "button": "Custom Template",
+                    "days": "(1-5 Days a week)",
+                    "title": "Category",
+                    "subtitle": "Select the time, day and type of exercise for your Personalized template",
+                    "hour": "Between 8:00 am and 8:00 pm",
+                    "hour_start": "Start time",
+                    "hour_end": "End Time",
+                    "select": "Select a day",
+                    "type": "Type",
+                    "cancel": "Cancel",
+                    "continue": "Continue",
+                    "limit": {
+                        "title": "Limit exceeded",
+                        "subtitle": "You can only create one daily Template per Category"
+                    },
+                    "error":{
+                        "title": "Something went wrong",
+                        "subtitle": "An error occurred when trying to create the Template, try again later"
+                    }
+
+                },
+                "default": {
+                    "header":"Default",
+                    "button": "Default Template",
+                    "days": "Days a week",
+                    "title": "Category",
+                    "subtitle": "Select the schedule for your Default template, it will be the same every day",
+                    "hour": "Between 8:00 am and 8:00 pm",
+                    "hour_start": "Start time",
+                    "hour_end": "End Time",
+                    "cancel": "Cancel",
+                    "continue": "Continue",
+                    "limit": {
+                        "title": "Limit exceeded",
+                        "subtitle": "You can only create one daily Template per Category"
+                    },
+                    "error":{
+                        "title": "Something went wrong",
+                        "subtitle": "An error occurred when trying to create the Template, try again later"
+                    }
+                }
+
+            }
+        },
+        "calendar": {
+            "title":"Calendar",
+            "categorie": {
+                "title": "Select Category",
+                "select": "Category",
+                "cancel": "Cancel",
+                "next": "Next"
+            },
+            "template": {
+                "title": "Category",
+                "exercises": "Exercises of",
+                "minutes": "Minutes",
+                "generate": "Generate template",
+                "exit": "If the page is exited, you will lose all the data entered. \n nDo you want to exit the page?",
+                "max": {
+                    "title": "Maximum quantity",
+                    "subtitle": "You cannot select more videos from this Section"
+                },
+                "name":{
+                    "title": "Name",
+                    "subtitle": "Template name"
+                },
+                "limit": {
+                    "title": "Limit exceeded",
+                    "subtitle": "You can only create one daily Template per Category"
+                },
+                "error":{
+                    "title": "Something went wrong",
+                    "subtitle": "An error occurred when trying to create the Template, try again later"
+                },
+                "success": {
+                    "title": "Generated template",
+                    "subtitle": "Your Template was generated correctly"
+                }
+
+            }
+        },
+        "templates": {
+            "title": "My Templates",
+            "name": "Name",
+            "minutes":"Minutes",
+            "categorie": "Category",
+            "date_create": "Creation date",
+            "date_training": "Training date",
+            "button": "See Template",
+            "delete": {
+                "title": "Template deleted",
+                "subtitle": "you have deleted a template",
+                "success":{
+                   
+                    "title": "Template removed",
+                    "subtitle": "A template was deleted"
+                }
+
+            }
+        },
+        "memberships": {
+            "title": "Category Package",
+            "membership": {
+                "button": "Acquire",
+                "own": "Acquired until",
+                "back": "Go back"
+            }
+        },
+        "template": {
+            "title": "Category",
+            "name": "Exercise",
+            "requirements": "Requirements",
+            "repeat": "Repeats",
+            "break": "Rest",
+            "seconds": "Seconds",
+            "example": "Example",
+            "time": "Total training time",
+            "min": "Approximate minutes",
+            "button": "Convert to PDF"
+        }
+    }
+}

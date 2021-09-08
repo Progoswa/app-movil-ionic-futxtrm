@@ -1,0 +1,18 @@
+.plantilla {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	border-radius: 10px;
+
+	padding: 10px;
+	color: white !important;
+
+	position: relative;
+}
+
+.delete {
+	position: absolute;
+	--background: rgb(97, 93, 93);
+	right: -10px;
+	color: white;
+}

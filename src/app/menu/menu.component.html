@@ -1,0 +1,31 @@
+<ion-menu contentId="main-content" menuId="first" type="overlay">
+	<ion-content>
+		<ion-list id="inbox-list">
+			<ion-img src="./assets/logo.png" class="logo"></ion-img>
+
+			<ion-list-header class="text-dorado" style="margin-top: 10px">Jogeiker Lizarraga</ion-list-header>
+			<ion-note class="text-dorado">jogeiker1999@gmail.com</ion-note>
+
+			<ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+				<ion-item
+					(click)="selectedIndex = i"
+					routerDirection="root"
+					[routerLink]="[p.url]"
+					lines="none"
+					detail="false"
+					[class.selected]="selectedIndex == i"
+				>
+					<ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+					<ion-label>{{ p.title }}</ion-label>
+				</ion-item>
+			</ion-menu-toggle>
+			<ion-menu-toggle auto-hide="false">
+				<ion-item (click)="logout()" lines="none" detail="false">
+					<ion-icon slot="start" ios="arrow-back-outline" md="arrow-back-sharp"></ion-icon>
+					<ion-label>Cerrar sesion</ion-label>
+				</ion-item>
+			</ion-menu-toggle>
+		</ion-list>
+	</ion-content>
+</ion-menu>
+<ion-router-outlet id="main-content"></ion-router-outlet>

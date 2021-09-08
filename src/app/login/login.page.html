@@ -1,0 +1,50 @@
+<ion-content class="content">
+  <ion-button ngClass.xs="lang-xs" (click)="langs()" style="--background: inherit; position: fixed; right: 10px; top: 10px;"><ion-img style="width: 24px;height: 24px;margin-right: 5px;" src="./assets/flags/{{translate.currentLang}}.png"></ion-img> {{translate.currentLang}}</ion-button>
+
+<ion-grid>
+ 
+  <ion-row style="color: white;">
+    <ion-img src="./assets/logo.png" class="logo"></ion-img>
+   
+    <form [formGroup]="loginForm" >
+      <ion-text class="text-blanco text-center">
+        <h3>{{'login.login' | translate}}</h3> 
+      </ion-text>
+      <ion-item fill="outline">
+        <ion-label position="floating">{{'login.user' | translate}}</ion-label>
+        <ion-input type="text" formControlName="usuario"></ion-input>
+        <ion-icon name="person" class="color-blanco" slot="end"></ion-icon>
+      </ion-item>
+      <div class="error" *ngIf="loginForm.controls.usuario.hasError('required') && loginForm.controls.usuario.touched">
+        {{'login.user_required' | translate}}
+      </div>
+      <ion-item fill="outline">
+       
+        <ion-label position="floating">{{'login.password' | translate}}</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+        <ion-icon name="key" class="color-blanco"   slot="end"></ion-icon>
+      </ion-item>
+      <div class="error" *ngIf="loginForm.controls.password.hasError('required') && loginForm.controls.password.touched">
+        {{'login.password_required' | translate}}
+      </div>
+      <div style="margin-top: 6px;">
+        <div class="ion-float-left">
+          <input type="checkbox" id="remember" formControlName="remember"><label for="remember" class="text-blanco">   {{'login.rememberme' | translate}}</label>
+        </div>
+
+      </div>
+        
+       
+      <ion-button class="ingresar" expand="block" fill="outline" [disabled]="loginForm.invalid" (click)="ingresar()">{{'login.login' | translate}}</ion-button>
+      <div style="text-align: center;margin-top: 12px;">
+        <a routerLink="/recuperar-password" class="text-dorado">{{'login.forgot_password' | translate}}</a><br>
+        <ion-button class="registro" style="margin-top: 15px;" routerLink="/registro" expand="block" fill="outline" >{{'login.not_account' | translate}}</ion-button>
+
+       
+
+      </div>
+    </form>
+  </ion-row>
+  </ion-grid>
+
+</ion-content> 

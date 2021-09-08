@@ -1,0 +1,1473 @@
+{
+
+    "logout":"Cerrar Sesión",
+    "accept":"Aceptar",
+    "cancel":"Cancelar",
+    "delete":"Eliminar",
+    "login":{
+        "login":"Iniciar Sesión",
+        "user":"Usuario",
+        "wrong":{
+            "title":"Credenciales invalidas",
+            "msg":"Usuario o contraseña incorrecta",
+            "button":"Aceptar"
+        },
+        "blocked":{
+            "title":"Usuario bloqueado",
+            "msg":"Su usuario se encuentra bloqueado ya que inflige las Políticas de FutXtrm. Por favor, comuníquese con nosotros a través de nuestros medios de contacto",
+            "button":"Aceptar"
+        },
+        "unverified":{
+            "title":"Usuario no verificado",
+            "msg":"Le enviamos un correo electronico con un enlace para verificar su cuenta.",
+            "button":"Aceptar"
+
+        }
+        ,
+        "user_required":"EL usuario es requerido",
+        "password":"Contraseña",
+        "password_required":"La contraseña es requerida",
+        "rememberme":"Recuérdame",
+        "forgot_password":"¿Olvido la contraseña?",
+        "not_account":"¿No tienes una cuenta?",
+        "sign_up":"Regístrate"
+    },
+    "sign_up":{
+        "title":"Crea tu cuenta",
+        "personal_information":"Información personal",
+        "name":{
+            "label":"Nombre",
+            "placeholder":"John",
+            "invalid":{
+                "required":"El nombre es requerido",
+                "pattern":"El nombre no puede contener números o caracteres especiales"
+            }
+        },
+        "last_name":{
+            "label":"Apellido",
+            "placeholder":"Doe",
+            "invalid":{
+                "required":"El apellido es requerido",
+                "pattern":"El apellido no puede contener números o caracteres especiales"
+            }
+        },
+        "phone":{
+            "label":"Teléfono",
+            "invalid":{
+                "required":"Teléfono requerido",
+                "pattern":"Número invalido"
+            }
+        },
+        "country":{
+            "label":"País",
+            "invalid":{
+                "required":"Debe seleccionar su país"
+            }
+        },
+        "state":{
+            "label":"Estado",
+            "invalid":{
+                "required":"Debe seleccionar el estado"
+            }
+        },
+        "city":{
+            "label":"Ciudad",
+            "invalid":{
+                "required":"Este campo es requerido"
+            }
+        },
+        "address":{
+            "label":"Dirección",
+            "invalid":{
+                "required":"Debe introducir su dirección"
+            }
+        },
+        "access_data":"Datos de acceso",
+        "email":{
+            "label":"Correo electrónico",
+            "placeholder":"john@gmail.com",
+            "invalid":{
+                "required":"El correo es requerido",
+                "pattern":"El correo no es válido"
+            }
+        },
+        "user":{
+            "label":"Usuario",
+            "placeholder":"John67",
+            "invalid":{
+                "required":"El nombre de usuario es requerido"
+            }
+        },
+        "password":{
+            "label":"Contraseña",
+            "invalid":{
+                "required":"La contraseña es requerida",
+                "pattern":"La contraseña debe tener  entre 8 y 16 caracteres, al menos un dígito, una minúscula, una mayúscula y un carácter no alfanumérico (*?&% ...)."
+            }
+        },
+        "repeat_password":{
+            "label":"Repetir contraseña",
+            "invalid":{
+                "required":"Por favor repita la contraseña",
+                "pattern":"La contraseña debe tener mínimo 8 caracteres",
+                "repeat_invalid":"La contraseña no coincide"
+            }
+        },
+        "sign_up":"Registrarme",
+        "have_account":"Ya tengo una cuenta",
+        "error":{
+            "email":{
+                "title":"Correo en uso",
+                "msg":"El correo electrónico ya se encuentra registrado"
+            },
+            "user":{
+                "title":"Usuario en uso",
+                "msg":"El nombre de usuario ya se encuentra registrado"
+            }
+        },
+        "success":{
+            "title":"Registro exitoso",
+            "msg":"Su registro se ha completado exitosamente, verifique su correo",
+            "button":"Aceptar"
+        }
+    },
+    "recover_password":{
+        "title":"¿Tienes problemas para entrar?",
+        "msg":"Introduce tu correo electrónico y te enviaremos un enlace para que recuperes el acceso a tu cuenta.",
+        "email":{
+            "label":"Correo electrónico",
+            "placeholder":"john@gmail.com",
+            "invalid":{
+                "required":"El correo es requerido",
+                "pattern":"El correo no es válido"
+            }
+        },
+        "button":"Enviar enlace de acceso",
+        "back":"Volver al inicio de sesión",
+        "success":{
+            "title":"Correo enviado",
+            "msg":"Se ha enviado un correo con un enlace para recuperar su contraseña",
+            "button":"Aceptar"
+        },
+        "failed":{
+            "title":"Correo invalido",
+            "msg":"No existe una cuenta registrada con este correo electrónico",
+            "button":"Aceptar"
+        }
+    },
+    "not_verified":{
+        "title":"Cuenta no verificada",
+        "initial_msg":"Enviamos un correo electrónico a",
+        "final_msg":"para verificar su cuenta",
+        "no_received":"¿No lo ha recibido?",
+        "resend":"Reenviar correo",
+        "back":"Volver al inicio de sesión",
+        "success":{
+            "title":"Correo enviado",
+            "msg":"Se ha enviado un correo con un enlace para verificar su cuenta",
+            "button":"Aceptar"
+        }
+
+    },
+    "new_password":{
+        "title":"Nueva contraseña",
+        "subtitle":"Introduce tu nueva contraseña",
+        "password":{
+            "label":"Nueva contraseña",
+            "required":"La contraseña es requerida"
+        },
+        "rpassword":{
+            "label":"Repetir contraseña",
+            "required":"Por favor ingrese su contraseña de nuevo",
+            "repeat":"Contraseñas no coinciden"
+        },
+        "button":"Cambiar contraseña",
+        "err":{
+            "title":"Enlace caducado",
+            "subtitle":"Este enlace ya no se encuentra disponible",
+            "back":"Volver al inicio"
+        },
+        "success":{
+            "title":"Cambio exitoso",
+            "msg":"Su contraseña se ha restablecido correctamente",
+            "button":"Aceptar"
+        }
+    },
+    "today":"Hoy",
+    "langs":{
+        "close":"Cerrar"
+    },
+
+
+    "days":{
+        "monday":"Lunes",
+        "tuesday":"Martes",
+        "wednesday":"Miércoles",
+        "thursday":"Jueves",
+        "friday":"Viernes",
+        "saturday":"Sábado",
+        "sunday":"Domingo"
+    },
+    "days_short":{
+        "mon":"Lun",
+        "tue":"Mar",
+        "wed":"Mie",
+        "thu":"Jue",
+        "fri":"Vie",
+        "sat":"Sab",
+        "sun":"Dom"
+    },
+    "types":{
+        "strength":"Fuerza",
+        "speed":"Velocidad",
+        "resistance":"Resistencia",
+        "coordination":"Coordinación",
+        "coordinating_capacity":"Capacidad Coordinativa",
+        "no_type":"Sin tipo"
+
+    },
+    "months":{
+        "1":"ENERO",
+        "2":"FEBRERO",
+        "3":"MARZO",
+        "4":"ABRIL",
+        "5":"MAYO",
+        "6":"JUNIO",
+        "7":"JULIO",
+        "8":"AGOSTO",
+        "9":"SEPTIEMBRE",
+        "10":"OCTUBRE",
+        "11":"NOVIEMBRE",
+        "12":"DICIEMBRE"
+    },
+    "months_short":{
+        "1":"ENE",
+        "2":"FEB",
+        "3":"MAR",
+        "4":"ABR",
+        "5":"MAY",
+        "6":"JUN",
+        "7":"JUL",
+        "8":"AGO",
+        "9":"SEP",
+        "10":"OCT",
+        "11":"NOV",
+        "12":"DIC"
+    },
+    "sidebar":{
+        "home":"Inicio",
+        "calendar":"Calendario",
+        "templates":"Plantillas"
+    },
+    "header":{
+        "admin":{
+            "user":{
+                "profile":"Perfil",
+                "notifications":"Notificaciones",
+                "logout":"Cerrar sesión"
+            },
+            "notifications":{
+                "title":"Notificaciones",
+                "all":"Tolas las Notificaciones"
+            }
+        },
+        "client":{
+            "user":{
+                "profile":"Perfil",
+                "notifications":"Notificaciones",
+                "logout":"Cerrar sesión"
+            },
+            "notifications":{
+                "title":"Notificaciones",
+                "all":"Tolas las Notificaciones"
+            }
+        }
+    },
+    "breadcrumb":{
+        "admin":{
+            "home":{
+                "title":"Inicio",
+                "title1":"Inicio"
+            },
+            "users":{
+                "title":"Usuarios",
+                "title1":"Inicio",
+                "title2":"Usuarios"
+            },
+            "roles":{
+                "title":"Usuarios",
+                "title1":"Inicio",
+                "title2":"Usuarios",
+                "title3":"Roles y Permisos"
+            },
+            "new_role":{
+                "title":"Usuarios",
+                "title1":"Inicio",
+                "title2":"Usuarios",
+                "title3":"Roles y Permisos",
+                "title4":"Nuevo rol"
+            },
+            "edit_role":{
+                "title":"Usuarios",
+                "title1":"Inicio",
+                "title2":"Usuarios",
+                "title3":"Roles y Permisos",
+                "title4":"Editar rol"
+            },
+            "add_user":{
+                "title":"Agregar",
+                "title1":"Inicio",
+                "title2":"Usuarios",
+                "title3":"Nuevo Administrador"
+            },
+            "consult_user":{
+                "title":"Consultar",
+                "title1":"Inicio",
+                "title2":"Usuarios",
+                "title3":"Consultar"
+            },
+            "categories":{
+                "title":"Categorías",
+                "title1":"Inicio",
+                "title2":"Configuración",
+                "title3":"Categorías"
+            },
+            "sections":{
+                "title":"Secciones",
+                "title1":"Inicio",
+                "title2":"Configuración",
+                "title3":"Categorías",
+                "title4":"Secciones"
+            },
+            "exercises":{
+                "title":"Ejercicios",
+                "title1":"Inicio",
+                "title2":"Configuración",
+                "title3":"Ejercicios"
+            },
+            "exercises_section":{
+                "title":"Ejercicios por Sección",
+                "title1":"Inicio",
+                "title2":"Configuración",
+                "title3":"Categorías",
+                "title4":"Secciones",
+                "title5":"Ejercicios"
+            },
+            "audits":{
+                "title":"Auditorias",
+                "title1":"Inicio",
+                "title2":"Auditoria"
+            },
+            "profile":{
+                "title":"Perfil",
+                "title1":"Inicio",
+                "title2":"Perfil"
+            },
+            "notifications":{
+                "title":"Notificaciones",
+                "title1":"Inicio",
+                "title2":"Notificaciones"
+            },
+            "payments":{
+                "title":"Pagos",
+                "title1":"Inicio",
+                "title2":"Pagos"
+            },
+            "payment":{
+                "title":"Pagos",
+                "title1":"Inicio",
+                "title2":"Pagos",
+                "title3":"Pago"
+            },
+            "bulk_load":{
+                "title":"Carga masiva",
+                "title1":"Inicio",
+                "title2":"Carga masiva"
+            
+            },
+            "free_categories":{
+                "title":"Categorías Gratis",
+                "title1":"Inicio",
+                "title2":"Categorías Gratis"
+                
+            },
+            "memberships":{
+                "title":"Membresías",
+                "title1":"Inicio",
+                "title2":"Membresías"
+                
+            }
+                
+            
+        }
+    },
+    "modals":{
+        "delete":{
+            "title":"¿Seguro desea eliminar?",
+            "cancel":"Cancelar",
+            "delete":"Eliminar"
+        },
+        "agree":{
+            "cancel":"Cancelar",
+            "agree":"Aceptar"
+        },
+        "success":{
+            "button":"Aceptar"
+        }
+    },
+    "pages":{
+        "home":{
+            "welcome":"Bienvenido a FutXtrm",
+            "registered":"Clientes registrados",
+            "available":"Categorías disponibles",
+            "payments":"Pagos en el mes actual",
+            "total":"Monto total por pagos"
+        },
+        "audits":{
+            "title":"Acciones de usuarios",
+            "excel":"Exportar a Excel",
+            "pdf":"Exportar a PDF",
+            "user":"Usuario",
+            "name":"Nombre",
+            "action":"Acción",
+            "date":"Fecha",
+            "search":"Buscar acción",
+            "generate":{
+                "pdf":{
+                    "title":"Generando PDF",
+                    "subtitle":"Su PDF se descargara pronto"
+                },
+                "xlsx":{
+                    "title":"Generando XLSX",
+                    "subtitle":"Su archivo Excel se descargara pronto"
+                }
+            }
+          
+        },
+        "payments":{
+            "categories":{
+                "name":"Categorías",
+                "title":"Pagos de Categorías",
+                "excel":" Exportar a Excel",
+                "pdf":" Exportar a PDF",
+                "client":"Cliente",
+                "categorie":"Categoría",
+                "date":"Fecha",
+                "search":"Buscar",
+                "options":"Opciones",
+                "tooltip":{
+                    "check":"Consultar pago",
+                    "delete":"Eliminar pago"
+                },
+                "payment":{
+                    "title":"Solicitud de Categoría",
+                    "accepted":"Aceptada",
+                    "canceled":"Cancelada",
+                    "msg0":"está solicitando comprar",
+                    "msg1":"compro",
+                    "msg2":"solicito comprar",
+                    "the":"la Categoría",
+                    "date":"Fecha:",
+                    "amount":"Monto:",
+                    "method":"Método:",
+                    "number":"Número de referencia:",
+                    "capture":"Captura",
+                    "refuse":"Rechazar",
+                    "accept":"Aceptar",
+                    "try":{
+                        "accept":{
+                            "title":"Aceptar solicitud",
+                            "subtitle":"Deseas aceptar esta solicitud de compra?"
+                        },
+                        "refuse":{
+                            "title":"Rechazar solicitud",
+                            "subtitle":"Deseas rechazar esta solicitud de compra?"
+
+                        }
+                    },
+                    "success":{
+                        "accept":{
+                            "title":"Pago aprobado",
+                            "subtitle":"Has liberado la Categoría"
+                        },
+                        "refuse":{
+                            "title":"Pago rechazado",
+                            "subtitle":"Has rechazado este pago"
+
+                        }
+                    }
+                }
+            },
+            "membership":{
+                "name":"Membresías",
+                "title":"Pagos de Membresías",
+                "excel":"Exportar a  Excel",
+                "pdf":"Exportar a PDF",
+                "client":"Cliente",
+                "membership":"Membresía",
+                "date":"Fecha",
+                "search":"Buscar",
+                "options":"Opciones",
+                "tooltip":{
+                    "check":"Consultar pago",
+                    "delete":"Eliminar pago"
+                },
+                "payment":{
+                    "title":"Registro de Membresía",
+                    "msg":"compro la Membresía",
+                    "date":"Fecha:",
+                    "amount":"Monto:",
+                    "method":"Método:",
+                    "number":"Número de referencia:"
+                  
+                }
+            },
+            "pdf":{
+                "generate":{
+                    "title":"Generando PDF",
+                    "subtitle":"Su PDF se descargara pronto"
+                }
+            },
+            "xlsx":{
+                "generate":{
+                    "title":"Generando XLSX",
+                    "subtitle":"Su archivo Excel se descargara pronto"
+                }
+            },
+            "delete":{
+                "title":"Registro eliminado",
+                "subtitle":"Se eliminó un registro de pago"
+            }
+      
+        },
+        "membership":{
+            "options":{
+                "edit":"Editar",
+                "enable":"Habilitar",
+                "disable":"Deshabilitar",
+                "delete":"Eliminar"
+            },
+            "new":{
+                "msg":"Nueva Membresía",
+                "title":"Nueva Membresía",
+                "name":"Nombre",
+                "description":"Descripción",
+                "image":"Seleccione una imagen para la Membresía",
+                "categories":"Seleccione las Categorías",
+                "prices":"Precios por meses",
+                "month":"Mes",
+                "months":"Meses",
+                "price":"Precio",
+                "discount":"Descuento",
+                "cancel":"Cancelar",
+                "create":"Crear"
+            },
+            "edit":{
+                "msg":"Editar Membresía",
+                "title":"Editar Membresía",
+                "name":"Nombre",
+                "description":"Descripción",
+                "image":"Seleccione una imagen para la Membresía",
+                "categories":"Seleccione las Categorías",
+                "prices":"Precios por meses",
+                "month":"Mes",
+                "months":"Meses",
+                "price":"Precio",
+                "discount":"Descuento",
+                "cancel":"Cancelar",
+                "save":"Guardar"
+            }
+        
+       },
+       "free_categories":{
+           "msg":{
+               "edit":"Editar mensaje",
+               "remove":"Remover Categoría",
+               "add":"Agregar Categoría"
+           },
+           "edit_text":{
+               "msg":"Categorías gratis",
+               "title":"Titulo",
+               "message":"Mensaje",
+               "days":"Días",
+               "cancel":"Cancelar",
+               "edit":"Editar"
+           },
+           "add":{
+               "title":"Nueva Categoría gratis",
+               "select":"Seleccione la Categoría",
+               "cancel":"Cancelar",
+               "add":"Añadir"
+           }
+       },
+       "bulk_load":{
+           "categorie":{
+               "title":"Categorías",
+               "subtitle":"Cargar archivo .xlsx (Excel) para las Categorías",
+               "button":"Cargar Archivo",
+               "load":{
+                   "title":"Carga masiva Categorías",
+                   "select":"Seleccione un archivo para las Categorías",
+                   "cancel":"Cancelar",
+                   "load":"Cargar"
+               },
+               "success":{
+                   "title":"Carga exitosa",
+                   "subtitle":"Se ha cargado el archivo de Categorías, por favor verificar"
+               },
+               "failed":{
+                   "title":"Error al cargar",
+                   "subtitle":"Por favor revise el archivo o cargue un archivo con el formato correcto"
+               }
+           },
+           "sections":{
+               "title":"Secciones",
+               "subtitle":"Cargar archivo .xlsx (Excel) para las Secciones",
+               "button":"Cargar Archivo",
+               "load":{
+                   "title":"Carga masiva Secciones",
+                   "select":"Seleccione la Categoría",
+                   "select2":"Seleccione un archivo para las Secciones",
+                   "cancel":"Cancelar",
+                   "load":"Cargar"
+               },
+               "success":{
+                "title":"Carga exitosa",
+                "subtitle":"Se ha cargado el archivo de Secciones, por favor verificar"
+            },
+            "failed":{
+                "title":"Error al cargar",
+                "subtitle":"Por favor revise el archivo o cargue un archivo con el formato correcto"
+            }
+          
+           },
+           "exercises":{
+            "title":"Ejercicios",
+            "subtitle":"Cargar archivo .xlsx (Excel) para los Ejercicios",
+            "button":"Cargar Archivo",
+            "load":{
+                "title":"Carga masiva Ejercicios",
+                "select":"Seleccione la Categoría",
+                "select2":"Seleccione la Sección",
+                "select3":"Seleccione un archivo para las Ejercicios",
+                "cancel":"Cancelar",
+                "load":"Cargar"
+                },
+            "success":{
+                "title":"Carga exitosa",
+                "subtitle":"Se ha cargado el archivo de Ejercicios, por favor verificar"
+                },
+            "failed":{
+                "title":"Error al cargar",
+                "subtitle":"Por favor revise el archivo o cargue un archivo con el formato correcto"
+                }
+            }
+       },
+       "roles":{
+           "title":"Roles y Permisos",
+           "search":"Buscar",
+           "name":"Nombre",
+           "date":"Fecha",
+           "options":"Opciones",
+           "msg":{
+               "new":"Nuevo rol",
+               "delete":"Eliminar rol",
+               "edit":"Editar rol"
+           },
+           "deleted":{
+                "title":"Rol eliminado",
+                "subtitle":"Se eliminó el rol"
+           },
+           "edit":{
+               "title":"Editar rol",
+               "button":"Editar rol",
+               "msg":{
+                "create":{
+                    "title":"Editar rol",
+                    "subtitle":"Seguro deseas modificar este Rol?"
+                },
+                "success":{
+                    "title":"Rol Modificado",
+                    "subtitle":"El Rol se modificó con éxito"
+                }
+            }
+           },
+           "new":{
+               "title":"Nuevo rol",
+               "name":"Nombre",
+               "users":{
+                   "title":"Usuarios",
+                   "create":"Crear administrador",
+                   "change":"Cambiar estado",
+                   "delete":"Eliminar",
+                   "consult":"Consultar"
+               },
+               "roles":{
+                   "title":"Roles",
+                   "create":"Crear ",
+                   "edit":"Editar",
+                   "delete":"Eliminar",
+                   "add":"Asignar"
+               },
+               "categories":{
+                   "title":"Categorías",
+                   "create":"Crear ",
+                   "edit":"Editar",
+                   "delete":"Eliminar"
+               },
+                "exercises":{
+                   "title":"Ejercicios",
+                   "load":"Cargar",
+                   "edit":"Editar",
+                   "delete":"Eliminar"
+               },
+                "sections":{
+                   "title":"Secciones",
+                   "create":"Crear",
+                   "edit":"Editar",
+                   "delete":"Eliminar",
+                   "add":"Agregar entrenamiento",
+                   "remove":"Remover entrenamiento"
+               },
+                "payments":{
+                   "title":"Pagos",
+                   "delete":"Eliminar",
+                   "accept":"Aceptar/Rechazar"
+               },
+               "button":"Registrar",
+               "msg":{
+                   "create":{
+                       "title":"Crear rol",
+                       "subtitle":"Seguro deseas crear este Rol?"
+                   },
+                   "success":{
+                       "title":"Nuevo rol",
+                       "subtitle":"El rol  se creó con éxito"
+                   }
+               }
+           }
+       },
+       "exercises":{
+           "title":"Ejercicios",
+           "search":"Buscar",
+           "exercise":"Ejercicio",
+           "type":"Tipo de ejercicio",
+           "date":"Fecha",
+           "options":"Opciones",
+           "see":{
+               "msg":"Ver ejercicio",
+               "title":"Ejercicio",
+               "name":"Ejercicio",
+               "description":"Descripción",
+               "requirements":"Requerimientos",
+               "type":"Seleccione si desea, el tipo de ejercicio",
+               "repeat":"Repeticiones",
+               "break":"Descanso (segundos)",
+               "time":"Tiempo por ejercicio (minutos)",
+               "mp4":"Video (mp4)",
+               "vimeo":"ID del video (VIMEO)"
+           },
+           "edit":{
+                "msg":"Editar Ejercicio",
+                "title":"Editar Ejercicio",
+                "name":"Ejercicio",
+                "description":"Descripción",
+                "requirements":"Requerimientos",
+                "type":"Seleccione si desea, el tipo de ejercicio",
+                "repeat":"Repeticiones",
+                "break":"Descanso (segundos)",
+                "time":"Tiempo por ejercicio (minutos)",
+                "type_video":"Seleccione el tipo de video a cargar",
+                "type_mp4":"Cargar video (mp4)",
+                "type_vimeo":"Plataforma VIMEO",
+                "mp4":"Video (mp4)",
+                "vimeo":"Ingrese el ID del video (VIMEO)",
+                "gif":"Seleccione un GIF a cargar!",
+                "cancel":"Cancelar",
+                "save":"Guardar cambios",
+                "success":{
+                    "title":"Ejercicio editado",
+                    "subtitle":"Se realizaron los cambios en el Ejercicio"
+                }
+           },
+           "section":{
+                "title":"Ejercicio de la Sección:",
+                "name":"Ejercicio",
+                "date":"Fecha",
+                "options":"Opciones",
+                "delete":{
+                    "msg":"Eliminar ejercicio",
+                    "title":"Ejercicio eliminado",
+                    "subtitle":"Se eliminó un Ejercicio"
+                },
+                "see":{
+                    "msg":"Ver Ejercicio",
+                    "name":"Ejercicio",
+                    "repeat":"Repeticiones",
+                    "description":"Descripción",
+                    "requirements":"Requerimientos",
+                    "type":"Tipo de ejercicio"
+                },
+                "new":{
+                    "msg":"Cargar Ejercicio",
+                    "title":"Nuevo Ejercicio",
+                    "name":"Ejercicio",
+                    "name_placeholder":"Nombre del Ejercicio a cargar",
+                    "description":"Descripción",
+                    "requirements":"Requerimientos",
+                    "type":"Seleccione si desea, el tipo de ejercicio",
+                    "repeat":"Repeticiones",
+                    "repeat_placeholder":"Ejemplo 2 x 10",
+                    "break":"Descanso (segundos)",
+                    "time":"Tiempo por ejercicio (minutos)",
+                    "type_video":"Seleccione el tipo de video a cargar",
+                    "type_mp4":"Cargar video (mp4)",
+                    "type_vimeo":"Plataforma VIMEO",
+                    "mp4":"Video (mp4)",
+                    "vimeo":"Ingrese el ID del video (VIMEO)",
+                    "gif":"Seleccione un GIF a cargar!",
+                    "cancel":"Cancelar",
+                    "save":"Cargar ejercicio",
+                    "success":{
+                        "title":"Nuevo Ejercicio",
+                        "subtitle":"Ejercicio creado con éxito"
+                    }
+                }
+           },
+           "delete":{
+               "msg":"Eliminar Ejercicio",
+               "success":{
+                "title":"Ejercicio eliminado",
+                "subtitle":"Se eliminó el Ejercicio:"
+            }
+            
+           }
+           
+       },
+       "categories":{
+           "title":"Categorías",
+           "search":"Buscar",
+           "name":"Nombre",
+           "date":"Fecha",
+           "sections":"Secciones",
+           "see_sections":"Ver Secciones",
+           "options":"Opciones",
+           "new":{
+               "msg":"Nueva Categoría",
+               "month":"Mes",
+               "months":"Meses",
+               "title":"Nueva Categoría",
+               "data":"Datos de la Categoría",
+               "name":"Escriba el nombre de la Categoría",
+               "frequency":"Ingrese frecuencia de rutina como: 1 vez al día",
+               "prices":"Precios por meses",
+               "price":"Precio",
+               "discount":"Descuento",
+               "default":"Plantilla predeterminada",
+               "type_day":"Tipo de ejercicio por día",
+               "select":"Selecciona un día y asígnale una Capacidad Coordinativa",
+               "day":"Día",
+               "type":"Tipo",
+               "add":"Agregar día",
+               "remove":"Remover día",
+               "description":"Ingrese una descripción de la Categoría a crear",
+               "image":"Seleccione una imagen para la Categoría",
+               "cancel":"Cancelar",
+               "create":"Crear Categoría",
+               "success":{
+                   "title":"Nueva Categoría",
+                   "subtitle":"Categoría creada con éxito"
+               }
+           },
+           "edit":{
+               "msg":"Editar Categoría",
+               "title":"Editar Categoría",
+               "data":"Datos de la Categoría",
+               "name":"Escriba el nombre de la Categoría",
+               "frequency":"Ingrese frecuencia de rutina como: 1 vez al día",
+               "prices":"Precios por meses",
+               "month":"Mes",
+               "months":"Meses",
+               "price":"Precio",
+               "discount":"Descuento",
+               "default":"Plantilla predeterminada",
+               "type_day":"Tipo de ejercicio por día",
+               "select":"Selecciona un día y asígnale una Capacidad Coordinativa",
+               "day":"Día",
+               "type":"Tipo",
+               "add":"Agregar día",
+               "remove":"Remover día",
+               "description":"Ingrese una descripción de la Categoría a crear",
+               "image":"Seleccione una imagen para la categoría",
+               "cancel":"Cancelar",
+               "update":"Editar",
+               "success":{
+                   "title":"Categoría modificada",
+                   "subtitle":"Se realizaron los cambios en la Categoría"
+               }
+           },
+           "see":{
+               "msg":"ver Categoría",
+               "tilte":"Categoría",
+               "data":"Datos de la Categoría",
+               "name":"Nombre de la Categoría",
+               "frequency":"Frecuencia de rutina",
+               "prices":"Precios por meses",
+               "month":"Mes",
+               "months":"Meses",
+               "price":"Precio",
+               "discount":"Descuento",
+               "default":"Plantilla predeterminada",
+               "type_day":"Tipo de ejercicio por día",
+               "day":"Día",
+               "type":"Tipo",
+               "description":"Descripción"
+              
+           },
+           "delete":{
+               "msg":"Eliminar Categoría",
+               "title":"Categoría eliminada",
+               "subtitle":"Se eliminó la Categoría:"
+           }
+       },
+       "sections":{
+           "title":"Secciones de la Categoría",
+           "search":"Buscar",
+           "name":"Nombre",
+           "description":"Descripción",
+           "date":"Fecha",
+           "options":"Opciones",
+           "exercies":"Ejercicios",
+           "new":{
+               "msg":"Nueva Sección",
+               "title":"Nueva Sección",
+               "name":"Nombre",
+               "name_required":"El nombre es requerido",
+               "msg_conditional":"(marcar solo si es la Sección condicional)",
+               "conditional":"Sección condicional",
+               "block_msg":"Bloques de Entrenamiento",
+               "minuts":"Minutos",
+               "amount":"Cantidad de Ejercicios",
+               "duration":"Duración aproximada en minutos: ",
+               "description":"Descripción",
+               "description_required":"La descripción es requerida",
+               "cancel":"Cancelar",
+               "create":"Crear",
+               "success":{
+                   "title":"Nueva Sección",
+                   "subtitle":"Se creó una nueva Sección. Recuerde asignar ahora los Ejercicios a la Sección creada"
+               }
+           },
+           "edit":{
+               "msg":"Editar Sección",
+               "title":"Editar Sección",
+               "name":"Nombre",
+               "name_required":"El nombre es requerido",
+               "msg_conditional":"(marcar solo si es la Sección Condicional)",
+               "conditional":"Sección Condicional",
+               "block_msg":"Bloques de Entrenamiento",
+               "minuts":"Minutos",
+               "amount":"Cantidad de Ejercicios",
+               "duration":"Duración aproximada en minutos: ",
+               "description":"Descripción",
+               "description_required":"La descripción es requerida",
+               "cancel":"Cancelar",
+               "save":"Guardar",
+               "success":{
+                   "title":"Sección editada",
+                   "subtitle":"Se realizaron los cambios la Sección:"
+               }
+           },
+           "see":{
+               "msg":"Ver Sección",
+               "title":"Sección",
+               "name":"Nombre",
+               "conditional":"Sección Condicional",
+               "blocks":"Bloques",
+               "minuts":"Bloques (minutos)",
+               "amount":"Cantidad de Ejercicios",
+               "duration":"Duración aproximada en minutos: ",
+               "description":"Descripción"
+              
+           },
+           "delete":{
+               "msg":"Eliminar Sección",
+               "title":"Sección eliminada",
+               "subtitle":"Se eliminó la  Sección:"
+           }
+       },
+       "notifications":{
+           "title":"Mis notificaciones",
+           "see":"Visto",
+           "new":"Nuevo"
+       },
+       "profile":{
+           "admin":"Administrador",
+           "client":"Cliente",
+           "email":"Correo electrónico",
+           "phone":"Teléfono",
+           "address":"Dirección",
+           "profile":{
+               "title":"Perfil",
+               "name":"Nombre",
+               "last_name":"Apellido",
+               "phone":"Teléfono",
+               "country":"País",
+               "state":"Estado",
+               "city":"Ciudad",
+               "address":"Dirección",
+               "save":"Guardar",
+               "success":{
+                   "title":"Cambio realizado!",
+                   "subtitle":"Su perfil se modificó con éxito!"
+               }
+           },
+           "security":{
+               "title":"Seguridad",
+               "email":"Correo electrónico",
+               "email_required":"El correo no puede quedar vacío",
+               "email_pattern":"El correo es invalido",
+               "username":"Nombre de usuario",
+               "username_required":"El nombre de usuario no puede quedar vacío",
+               "current_password":"Contraseña actual*",
+               "current_password_required":"La contraseña es requerida",
+               "check":"Marcar el Checkbox si desea cambiar la contraseña",
+               "new_password":"Nueva Contraseña",
+               "new_password_pattern":"La contraseña debe tener  entre 8 y 16 caracteres, al menos un dígito, una minúscula, una mayúscula y un carácter no alfanumérico (*?&% ...).",
+               "repeat_password":"Repetir Contraseña",
+               "repeat_password_invalid":"La contraseña no coincide",
+               "save":"Guardar",
+                "failed":{
+                    "title":"Contraseña incorrecta!",
+                    "subtitle":"Para cambiar los datos debe ingresar la contraseña correcta"
+                }
+           }
+       },
+       "users":{
+           "title":"Usuarios",
+           "search":"Buscar",
+           "users":"Usuarios",
+           "name":"Nombre y apellido",
+           "roles":"Rol de Administrador",
+           "add":{
+               "msg":"Asignar Rol",
+               "title":"Asignar rol",
+               "rol":"Rol de Administrador",
+               "requerid":"Debe asignarle un role de Administrador",
+               "cancel":"Cancelar",
+               "add":"Asignar rol"
+           },
+           "role_client":"Cliente",
+           "date":"Fecha",
+           "status":"Usuario Habilitado",
+           "verified":"Usuario Verificado",
+           "options":"Opciones",
+           "see":{
+               "msg":"Consultar usuario",
+               "email":"Correo electrónico",
+               "user":"Usuario",
+               "phone":"Teléfono",
+               "address":"Dirección",
+               "profile":{
+                "title":"Perfil",
+                "name":"Nombre",
+                "last_name":"Apellido",
+                "phone":"Teléfono",
+                "country":"País",
+                "state":"Estado",
+                "city":"Ciudad",
+                "address":"Dirección",
+                "back":"Regresar"
+               }
+               
+           },
+           "new":{
+               "msg":"Nuevo Administrador",
+               "title":"Nuevo Administrador",
+               "name":{
+                   "label":"Nombre",
+                   "required":"El nombre es requerido",
+                   "pattern":"El nombre no puede contener números o caracteres especiales"
+               },
+               "last_name":{
+                   "label":"Apellido",
+                   "required":"El apellido es requerido",
+                   "pattern":"El apellido no puede contener números o caracteres especiales"
+               },
+               "phone":{
+                   "label":"Teléfono",
+                   "required":"Teléfono requerido",
+                   "pattern":"Numero Invalido"
+               },
+               "email":{
+                   "label":"Correo electrónico",
+                   "required":"El correo es requerido",
+                   "pattern":"El correo no es válido"
+               },
+               "username":{
+                   "label":"Nombre de usuario",
+                   "required":"El nombre de usuario es requerido"
+               },
+               "country":"País",
+               "state":"Estado",
+               "city":"Ciudad",
+               "address":{
+                   "label":"Dirección",
+                   "required":"Debe introducir su dirección"
+               },
+               "role":{
+                   "label":"Rol de administrador",
+                   "required":"Debe Asignarle un role de administrador"
+               },
+               "button":"Registrar",
+               "success":{
+                   "title":"Administrador Registrado",
+                   "subtitle":"Se registró el Administrador con el nombre de usuario"
+               },
+               "failed":{
+                   "email":{
+                       "title":"Correo en uso",
+                       "subtitle":"El correo electrónico ya se encuentra registrado"
+                   },
+                   "username":{
+                       "title":"Usuario en uso",
+                       "subtitle":"El nombre de usuario ya se encuentra registrado"
+                   }
+               }
+           }
+       }
+    },
+    "user":{
+        "start":{
+            "categorie":{
+                "title":"Adquirir Categoría",
+                "subtitle":"Para poder continuar debe adquirir una de nuestras Categoría o bien puedes adquirir una",
+                "membership":"Membresía",
+                "next":{
+                    "title":"Adquirir Categoría",
+                    "subtitle":"Seguro que desea adquirir esta Categoría?"
+                }
+            },
+            "membership":{
+                "title":"Adquirir Membresías",
+                "subtitle":"Para poder continuar debe adquirir una de nuestras Membresías o bien puedes adquirir una",
+                "categorie":"Categoría",
+                "next":{
+                    "title":"Adquirir Membresía",
+                    "subtitle":"Seguro que desea adquirir esta Membresía?"
+                }
+            },
+            "button":"Siguiente",
+            "free":"Prueba una Categoría GRATIS!!"
+
+        },
+        "free":{
+            "button":"Siguiente",
+            "categorie":"Adquirir una Categoría",
+            "next":{
+                "title":"Categoría gratis",
+                "subtitle":"Seguro que quieres elegir esta Categoría?"
+            }
+        },
+        "categorie_payment":{
+            "title":"Categoría",
+            "subtitle":"¿Por cuánto tiempo quieres comprar esta Categoría?",
+            "month_by":"Mes por",
+            "months_by":"Meses por",
+            "pay":"¿Cómo quieres pagar?",
+            "card":{
+                "title":"Tarjeta de Crédito",
+                "subtitle":"Tarjeta de Crédito o intenta con",
+                "other":"OTRO METODO",
+                "number":{
+                    "label":"Número de Tarjeta de Crédito",
+                    "invalid":"El numero debe estar conformado por 16 dígitos"
+                },
+                "date":{
+                    "label":"Fecha de vencimiento",
+                    "placeholder":"(MM/YYYY)",
+                    "invalid":"La fecha de vencimiento es requerida"
+                    
+                },
+                "cvc":{
+                    "label":"CVC",
+                    "invalid":"El CVC debe estar conformado por 3 dígitos"
+                },
+                "button":"Procesar pago",
+                "proccess":{
+                    "title":"Procesando pago",
+                    "subtitle":"Por favor espere mientras procesamos su pago..."
+                },
+                "success":{
+                    "title":"Pago procesado",
+                    "subtitle":"Su pago se ha procesado correctamente..."
+                },
+                "error":{
+                    "10":{
+                        "title":"Pago no procesado",
+                        "subtitle":"El número de tarjeta es invalido"
+                    },
+                    "11":{
+                        "title":"Pago no procesado",
+                        "subtitle":"Año de expiración invalido"
+                    },
+                    "12":{
+                        "title":"Pago no procesado",
+                        "subtitle":"Mes de expiración invalido"
+                    },
+                    "default":{
+                        "title":"Pago no procesado",
+                        "subtitle":"Ocurrió un error al intentar procesar el pago"
+                    }
+                }
+            },
+            "offline":{
+                "title":"Pagos Offline",
+                "subtitle":"Pago offline o intenta con",
+                "other":"OTRO METODO",
+                "msg":"Para comprar una Categoría por el Método Offline debe contactarse con nuestro equipo para información",
+                "number":{
+                    "label":"Número de Referencia Bancaria",
+                    "invalid":"El Número de Referencia Bancaria es requerido"
+                },
+                "capture":{
+                    "label":"Captura de la transferencia",
+                    "invalid":"La captura es requerida"
+
+                },
+                "button":"Enviar pago",
+                "success":{
+                    "title":"Pago en proceso",
+                    "subtitle":"Su pago será verificado por el equipo de FutXtrm...'"
+                },
+                "error":{
+                    "title":"Ups!",
+                    "subtitle":"Ha ocurrido un error al intentar cargar su pago, por favor intente más tarde.'"
+ 
+                }
+
+            },
+            "paypal":{
+                "title":"Estas por adquirir la Categoría",
+                "month":"Mes",
+                "months":"Meses",    
+                "amount":"Monto",
+                "discount":"Descuento",
+                "total":"Total a pagar",
+                "approve":{
+                    "title":"Pago procesado",
+                    "subtitle":"Su pago se procesó correctamente"
+                },
+                "cancel":{
+                    "title":"Pago cancelado",
+                    "subtitle":"Su pago no se pudo procesar, por favor intente más tarde"
+                },
+                "error":{
+                    "title":"Ha ocurrido un error",
+                    "subtitle":"Su pago no se pudo procesar, por favor intente más tarde"
+                }
+            }
+        },
+        "membership_payment":{
+            "title":"Membresía",
+            "subtitle":"¿Por cuánto tiempo quieres comprar esta Membresía?",
+            "month_by":"Mes por",
+            "months_by":"Meses por",
+            "card":{
+                "title":"Tarjeta de Crédito",
+                "number":{
+                    "label":"Número de Tarjeta de Crédito",
+                    "invalid":"El número debe estar conformado por 16 dígitos"
+                },
+                "date":{
+                    "label":"Fecha de vencimiento",
+                    "placeholder":"(MM/YYYY)",
+                    "invalid":"La fecha de vencimiento es requerida"
+                    
+                },
+                "cvc":{
+                    "label":"CVC",
+                    "invalid":"El CVC debe estar conformado por 3 dígitos"
+                },
+                "button":"Procesar pago",
+                "proccess":{
+                    "title":"Procesando pago",
+                    "subtitle":"Por favor espere mientras procesamos su pago..."
+                },
+                "success":{
+                    "title":"Pago procesado",
+                    "subtitle":"Su pago se ha procesado correctamente..."
+                },
+                "error":{
+                    "10":{
+                        "title":"Pago no procesado",
+                        "subtitle":"El número de tarjeta es invalido"
+                    },
+                    "11":{
+                        "title":"Pago no procesado",
+                        "subtitle":"Año de expiración invalido"
+                    },
+                    "12":{
+                        "title":"Pago no procesado",
+                        "subtitle":"Mes de expiración invalido"
+                    },
+                    "default":{
+                        "title":"Pago no procesado",
+                        "subtitle":"Ocurrió un error al intentar procesar el pago"
+                    }
+                }
+            },
+            "paypal":{
+                "title":"Estas por adquirir la Membresía",
+                "month":"Mes",
+                "months":"Meses",    
+                "amount":"Monto",
+                "discount":"Descuento",
+                "total":"Total a pagar",
+                "approve":{
+                    "title":"Pago procesado",
+                    "subtitle":"Su pago se procesó correctamente"
+                },
+                "cancel":{
+                    "title":"Pago cancelado",
+                    "subtitle":"Su pago no se pudo procesar, por favor intente más tarde"
+                },
+                "error":{
+                    "title":"Ha ocurrido un error",
+                    "subtitle":"Su pago no se pudo procesar, por favor intente más tarde"
+                }
+            }
+        },
+        "home":{
+            "header":"Inicio",
+            "welcome":"Bienvenido a FutXtrm",
+            "title":"Categorías, elija una Categoría",
+            "blocked":{
+                "title":"Categoría bloqueada",
+                "msg":"Aun no has desbloqueado esta Categoría",
+                "button":"Aceptar"
+            },
+            "choose":{
+                "title":"Categoría",
+                "personalized":{
+                    "button":"Plantilla Personalizada",
+                    "days":"(1-5 Días a la semana)",
+                    "title":"Categoría",
+                    "header":"Personalizada",
+                    "subtitle":"Seleccione el horario, día y tipo de ejercicio para su plantilla Personalizada",
+                    "hour":"Entre las 8:00 am y 8:00 pm",
+                    "hour_start":"Hora de Inicio",
+                    "hour_end":"Hora Final",
+                    "select":"Selecciona un día",
+                    "type":"Tipo",
+                    "cancel":"Cancelar",
+                    "continue":"Continuar",
+                    "limit":{
+                        "title":"Limite superado",
+                        "subtitle":"Solo puedes crear una Plantilla diaria por Categoría"
+                    },
+                    "error":{
+                        "title":"Algo salió mal",
+                        "subtitle":"Ocurrió un error al intentar crear la Plantilla, por favor intente más tarde"
+                    }
+
+                },
+                "default":{
+                    "header":"Predeterminada",
+                    "button":"Plantilla Predeterminada",
+                    "days":"Días a la semana",
+                    "title":"Categoría",
+                    "subtitle":"Seleccione el horario para su plantilla Predeterminada, este será el mismo cada día",
+                    "hour":"Entre las 8:00 am y 8:00 pm",
+                    "hour_start":"Hora de Inicio",
+                    "hour_end":"Hora Final",
+                    "cancel":"Cancelar",
+                    "continue":"Continuar",
+                    "limit":{
+                        "title":"Limite superado",
+                        "subtitle":"Solo puedes crear una Plantilla diaria por Categoría"
+                    },
+                    "error":{
+                        "title":"Algo salió mal",
+                        "subtitle":"Ocurrió un error al intentar crear la Plantilla, intente más tarde"
+                    }
+                }
+
+            }
+        },
+        "calendar":{
+            "title":"Calendario",
+            "categorie":{
+                "title":"Seleccionar Categoría",
+                "select":"Categoría",
+                "cancel":"Cancelar",
+                "next":"Siguiente"
+            },
+            "template":{
+                "title":"Categoría",
+                "exercises":"Ejercicios de",
+                "minutes":"Minutos",
+                "generate":"Generar plantilla",
+                "exit":"Si se sale la página perderá todos los datos ingresados.\n¿Deseas salir de la página?",
+                "max":{
+                    "title":"Cantidad máxima",
+                    "subtitle":"No puedes seleccionar más videos de esta Sección"
+                },
+                "name":{
+                    "title":"Nombre",
+                    "subtitle":"Nombre de la plantilla"
+                },
+                "limit":{
+                    "title":"Limite superado",
+                    "subtitle":"Solo puedes crear una Plantilla diaria por Categoría"
+                },
+                "error":{
+                    "title":"Algo salió mal",
+                    "subtitle":"Ocurrió un error al intentar crear la Plantilla, intente más tarde"
+                },
+                "success":{
+                    "title":"Plantilla generada",
+                    "subtitle":"Su Plantilla se generó correctamente"
+                }
+
+            }
+        },
+        "templates":{
+            "title":"Mis Plantillas",
+            "name":"Nombre",
+            "minutes":"Minutos",
+            "categorie":"Categoría",
+            "date_create":"Fecha de creación",
+            "date_training":"Fecha de entrenamiento",
+            "button":"Ver Plantilla",
+            "delete":{
+                "title":"Plantilla borrada",
+                "subtitle":"has borrado una plantilla",
+                "success":{
+                    "title":"Plantilla eliminada",
+                    "subtitle":"Se elimino una plantilla"
+                }
+            }
+        },
+        "memberships":{
+            "title":"Paquete de Categorías",
+            "membership":{
+                "button":"Adquirir",
+                "own":"Adquirida hasta ",
+                "back":"Volver atras"
+            }
+        },
+        "template":{
+            "title":"Categoría",
+            "name":"Ejercicio",
+            "requirements":"Requerimientos",
+            "repeat":"Repeticiones",
+            "break":"Descanso",
+            "seconds":"Segundos",
+            "example":"Ejemplo",
+            "time":"Tiempo total de entrenamiento",
+            "min":"Minutos aproximados",
+            "button":"Convertir a PDF"
+        }
+    }
+}
